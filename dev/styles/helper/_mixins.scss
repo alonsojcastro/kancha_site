@@ -1,0 +1,21 @@
+@import '_variables';
+
+@mixin font-nav($font_nav, $font_nav_color, $font_nav_size) {
+	-webkit-font-nav: $font_nav, $font_nav_color, $font_nav_size;
+  	-moz-font-nav: $font_nav, $font_nav_color, $font_nav_size;
+    -ms-font-nav: $font_nav, $font_nav_color, $font_nav_size; 
+    font-nav: $font_nav, $font_nav_color, $font_nav_size;
+}
+
+// @mixin tablet {
+//   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+//     @content;
+//   }
+// }
+
+// @mixin desktop {
+//   @media (min-width: #{$desktop-width}) {
+//     @content;
+//   }
+// }
+

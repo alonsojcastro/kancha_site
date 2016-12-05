@@ -9,13 +9,15 @@ body {
   height: 16vh;
   margin: 0 auto;
   background-color: #F6E03D;
-  z-index: -1; }
+  z-index: 1000; 
+}
 
 div a img {
   width: 15vw;
   position: absolute;
   float: left;
-  margin-left: 4.5vw; }
+  margin-left: 4.5vw;
+}
 
 #nav_wrapper ul {
   width: 100vw;
@@ -156,3 +158,30 @@ div a img {
     display: block; } }
 
 /*# sourceMappingURL=main.css.map */
+
+
+/* grid image hover text*/
+.image_container {
+  position:relative;
+}
+
+.hover_text {
+  width: 1500px;
+  height: 2000px;
+  background-color: lightgrey;
+  opacity: 0.0;
+  position: absolute;
+  top: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.hover_text:hover {
+  opacity: 0.5;
+}
+
+.hover_text_container {
+  display: table-cell;
+  vertical-align: middle;
+}

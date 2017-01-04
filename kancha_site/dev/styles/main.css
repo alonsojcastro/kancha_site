@@ -3,13 +3,19 @@
 body {
   margin: 0px; }
 
+p {
+  font-family: roboto;
+  font-weight: lighter;
+  color: grey;
+}
+
 #nav_wrapper {
   position: fixed;
   width: 100vw;
   height: 16vh;
   margin: 0 auto;
   background-color: #F6E03D;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 div a img {
@@ -184,4 +190,51 @@ div a img {
 .hover_text_container {
   display: table-cell;
   vertical-align: middle;
+}
+
+.nosotros_container {
+  padding: 50px;
+  padding-top: 150px;
+  /*column-count: 2;*/
+}
+
+.title {
+  text-align:center;
+  font-family:roboto;
+  padding-bottom:50px;
+}
+
+.contactanos_container {
+  padding: 50px;
+}
+
+.contact_list {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  display: inline-block;
+}
+
+.contact_list li {
+  float: left;
+  margin-right: 30px;
+}
+
+.form_container {
+  margin: 50px;
+  padding: 50px;
+  background-color: lightgrey;
+  border: 2px solid grey;
+}
+
+footer {
+  background-color: #F6E03D;
+  padding: 10px 4.5vw;
+}
+
+footer ul {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-nav: "Roboto", sans-serif, #0E0D0C, 1.09vw;
+  -moz-font-nav: "Roboto", sans-serif, #0E0D0C, 1.09vw;
+  -ms-font-nav: "Roboto", sans-serif, #0E0D0C, 1.09vw;
 }

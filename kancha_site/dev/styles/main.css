@@ -4,9 +4,33 @@ body {
   margin: 0px; }
 
 p {
+  font-size: large;
   font-family: roboto;
   font-weight: lighter;
   color: grey;
+}
+
+h1,h2,h3 {
+  font-family: roboto
+}
+
+h1 {
+  font-size:3em;
+}
+
+h2 {
+  padding-top: 18vh;
+  font-size:2em;
+}
+
+#menu a {
+  font-size:1em;
+  font-family:roboto;
+}
+
+#menu button {
+  font-size: 1em;
+  font-family: roboto;
 }
 
 #nav_wrapper {
@@ -14,11 +38,12 @@ p {
   width: 100vw;
   height: 16vh;
   margin: 0 auto;
+  top:0px;
   background-color: #F6E03D;
   z-index: 1000;
 }
 
-div a img {
+#logo {
   width: 15vw;
   position: absolute;
   float: left;
@@ -37,11 +62,10 @@ div a img {
 
 #nav_wrapper ul a {
   color: #0E0D0C;
-  font-size: 1.09vw;
+  font-size: 1em;
   text-decoration: none;
   line-height: 32px;
-  margin-left: 190px;
-  padding: 0 80px;
+  margin-left: 20vw;
   font-family: "Roboto", sans-serif;
   -webkit-font-nav: "Roboto", sans-serif, #0E0D0C, 1.09vw;
   -moz-font-nav: "Roboto", sans-serif, #0E0D0C, 1.09vw;
@@ -77,7 +101,7 @@ div a img {
 #nav_wrapper ul ul a {
   margin-top: 100px;
   line-height: 100%;
-  padding: 0px 69px; }
+ }
 
 #nav_wrapper ul ul ul {
   top: 0;
@@ -85,6 +109,48 @@ div a img {
 
 #nav_wrapper ul li:hover > ul {
   display: block; }
+
+  .dropdown {
+    margin-left: 10vw;
+  }
+
+.dropbtn {
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /*min-width: 160px;*/
+}
+
+.dropdown-content a {
+  margin-top: 1vh;
+    color: black;
+    /*padding: 12px 16px;*/
+    text-decoration: none;
+    display: block;
+}
+#menu {
+  text-align: center;
+}
+/*.dropdown-content a:hover {background-color: #f1f1f1}*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}*/
 
 @media (max-width: 750px) {
   nav .text-menu {
@@ -166,9 +232,24 @@ div a img {
 /*# sourceMappingURL=main.css.map */
 
 
+main {
+  margin-top:16vh;
+  padding: 0 10vw;
+}
+
 /* grid image hover text*/
+
+img {
+  max-width: 100%;
+}
+
+
 .image_container {
   position:relative;
+  display:inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  marging-right: 8px;
 }
 
 .hover_text {
@@ -194,7 +275,6 @@ div a img {
 
 .nosotros_container {
   padding: 50px;
-  padding-top: 150px;
   /*column-count: 2;*/
 }
 
@@ -221,15 +301,21 @@ div a img {
 }
 
 .form_container {
+  position:relative;
   margin: 50px;
   padding: 50px;
   background-color: lightgrey;
   border: 2px solid grey;
 }
 
+footer h3 {
+  margin-top: 18vh;
+}
+
 footer {
   background-color: #F6E03D;
   padding: 10px 4.5vw;
+  height: 100vh;
 }
 
 footer ul {
@@ -238,3 +324,23 @@ footer ul {
   -moz-font-nav: "Roboto", sans-serif, #0E0D0C, 1.09vw;
   -ms-font-nav: "Roboto", sans-serif, #0E0D0C, 1.09vw;
 }
+
+
+
+#overlay    {
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.75);
+  text-align:center;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;}
+
+.image_container:hover #overlay {
+               opacity:1;}
+
+#plus       {  font-family:Helvetica;
+               font-weight:900;
+               color:rgba(255,255,255,.85);
+               font-size:96px;}

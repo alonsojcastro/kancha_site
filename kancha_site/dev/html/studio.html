@@ -15,28 +15,34 @@
       <a id="logo" href="#"><img src='../img/Kancha_logo_white.png'></a>
     </div>
 
-		<ul>
-      <li><a href="#">STUDIO</a>
-        <ul>
-          <li><a href="#">NOSOTROS</a></li>
-          <li><a href="#">CONTACTO</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#">PROYECTOS</a>
-        <ul>
-          <li><a href="#">ARQUITECTURA</a></li>
-          <li><a href="#">MOBILIARIO</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#">FACEBOOK</a></li>
-
-    </ul>
+    <div id="menu">
+      <div class="dropdown">
+        <a href="studio.html"><button class="dropbtn">STUDIO</button></a>
+        <div class="dropdown-content">
+          <a href="studio.html#nosotros">NOSOTROS</a>
+          <a href="studio.html#contacto">CONTACTO</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="projectos.html"><button class="dropbtn">PROJECTOS</button></a>
+        <div class="dropdown-content">
+          <a href="projectos.html#arquitectura">ARQUITECTURA</a>
+          <a href="projectos.html#mobiliario">MOBILIARIO</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">SOCIAL</button>
+        <div class="dropdown-content">
+          <a href="#">FACEBOOK</a>
+          <a href="#">TWITTER</a>
+          <a href="#">INSTAGRAM</a>
+        </div>
+      </div>
+    </div>
 
   </nav>
- <div>
 
+<main>
   <div class="nosotros_container">
     <h1 class="title">Nosotros</h1>
     <div style="column-count:2;">
@@ -70,24 +76,26 @@
     </div>
   </div>
 
- </div>
-
-  <footer>
-    <h3>Kancha Studio</h3>
-    <div style="column-count:2;">
-    <div>
-      <p>Somos estudio de Architectura latino con sede en Lima;<br>
-        dedicado al diseño en general, desde mobiliario hasta edificaciones
-      </p>
-    </div>
-    <div>
-      <ul class="contact_list" style="display:inline-block">
-        <li>teléfono: +51.964.309.541</li>
-        <li>e-mail: hola@kancha.studio</li>
-      </ul>
-    </div>
-  </div>
-  </footer>
+</main>
 
 </body>
+<footer>
+  <h3>Kancha Studio</h3>
+  <div style="column-count:2;">
+  <div>
+    <p>Somos estudio de Architectura latino con sede en Lima;<br>
+      dedicado al diseño en general, desde mobiliario hasta edificaciones
+    </p>
+  </div>
+  <div>
+    <ul class="contact_list" style="display:inline-block">
+      <li>teléfono: +51.964.309.541</li>
+      <li>e-mail: hola@kancha.studio</li>
+    </ul>
+  </div>
+</div>
+<div>
+  <p> Designed and developed by Gentry Demchak and Alonso Castro</p>
+</div>
+</footer>
 </html>

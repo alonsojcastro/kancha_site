@@ -44,8 +44,7 @@ h2 {
 }
 
 #logo {
-  width: 15vw;
-  position: absolute;
+  height: 16vh;
   float: left;
   margin-left: 4.5vw;
 }
@@ -140,7 +139,7 @@ h2 {
     display: block;
 }
 #menu {
-  text-align: center;
+  
 }
 /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 
@@ -248,9 +247,19 @@ img {
 .image_container {
   position:relative;
   display:inline-block;
+  overflow: hidden;
   margin-bottom: 8px;
   width: calc(50% - 4px);
   marging-right: 8px;
+}
+
+.grid_image {
+  transition: all 0.5s linear;
+  transform: scale3d(1, 1, 1);
+}
+
+.grid_image:hover {
+  transform: scale3d:(1.2,1.2,1);
 }
 
 .hover_text {
@@ -311,11 +320,12 @@ img {
 
 footer h3 {
   margin-top: 18vh;
+
 }
 
 footer {
   background-color: #F6E03D;
-  padding: 10px 4.5vw;
+  padding: 10px 10vw;
   height: 100vh;
 }
 

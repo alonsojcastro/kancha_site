@@ -556,6 +556,7 @@ var modal = (data) => {
 
       $('#viewer_title').text(data.title);
       $('#viewer_description').text(data.description);
+      $('.current').text(current + ' / ' + imageData.length);
       console.log('match found');
 }
 

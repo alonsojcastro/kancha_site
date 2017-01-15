@@ -139,7 +139,7 @@ h2 {
     display: block;
 }
 #menu {
-  
+
 }
 /*.dropdown-content a:hover {background-color: #f1f1f1}*/
 
@@ -259,6 +259,7 @@ img {
 }
 
 .grid_image:hover {
+  cursor: pointer;
   transform: scale3d:(1.2,1.2,1);
 }
 
@@ -453,4 +454,30 @@ footer ul {
 
 button:focus {
   outline: none;
+}
+
+.modal_container {
+  padding-top: 5vh;
+}
+
+.modal_image_container {
+  height: 60vh;
+  float: left;
+}
+
+.modal_text_container{
+  height: 60vh;
+  background-color: #F6E03D;
+}
+
+.modal_project_name {
+  display: inline;
+}
+
+.curret {
+  display: inline;
+}
+
+.total {
+  display: inline;
 }

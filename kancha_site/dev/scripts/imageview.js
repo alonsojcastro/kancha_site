@@ -465,7 +465,7 @@ var imageData = [
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Dormitorios/El_cuarto_de_Santiago_Vero.jpg",
-      "orientation":"landscape",
+      "orientation":"portrait",
       "width":662,
       "height":992
     }

@@ -23,6 +23,10 @@ h2 {
   font-size:3em;
 }
 
+::selection {
+  background: #F6E03D; /* WebKit/Blink Browsers */
+}
+
 #menu {
   height: 6em;
 }
@@ -139,6 +143,7 @@ h2 {
     position: absolute;
     min-width: 10em;
     background-color: lightgrey;
+    box-shadow:0px 20px 300px -20px rgba(0,0,0,0.75)
 }
 
 .dropdown-content a {
@@ -250,8 +255,15 @@ img {
 }
 
 .contact_list li {
-  float: left;
-  margin-right: 30px;
+  font-family: roboto;
+  font-size: 2em;
+  margin-top: 2em;
+}
+
+.contact_list img {
+  margin-right: 1em;
+  width: 4em;
+  height: 4em;
 }
 
 .form_container {
@@ -273,6 +285,7 @@ footer {
   background-color: #F6E03D;
   padding: 10px 10vw;
   height: 100vh;
+  overflow: auto;
 }
 
 footer ul {

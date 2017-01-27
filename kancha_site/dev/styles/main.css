@@ -11,15 +11,16 @@ p {
 }
 
 h1,h2,h3 {
-  font-family: roboto
+  font-family: roboto;
 }
 
 h1 {
+  margin-top: 15vh;
   font-size:6em;
 }
 
 h2 {
-  padding-top: 18vh;
+  padding-top: 3vh;
   font-size:3em;
 }
 
@@ -175,7 +176,7 @@ h2 {
 
 
 main {
-  margin-top:30vh;
+  margin-top:10vh;
   padding: 0 10vw 10vw 10vw;
 }
 
@@ -233,14 +234,14 @@ img {
 }
 
 .nosotros_container {
-  padding: 50px;
+  padding: 10px;
   /*column-count: 2;*/
 }
 
 .title {
   text-align:center;
   font-family:roboto;
-  padding-bottom:50px;
+  padding-bottom:10px;
 }
 
 .contactanos_container {
@@ -277,14 +278,15 @@ img {
 
 
 footer h1 {
-  margin-top: 30vh;
+  margin-top: 32vh;
+  padding-top: 10vh;
 
 }
 
 footer {
   background-color: #F6E03D;
-  padding: 10px 10vw;
-  height: 100vh;
+  padding: 0px 10vw;
+  height: 95vh;
   overflow: auto;
 }
 
@@ -294,8 +296,6 @@ footer ul {
   -moz-font-nav: "Roboto", sans-serif, #0E0D0C, 1.09vw;
   -ms-font-nav: "Roboto", sans-serif, #0E0D0C, 1.09vw;
 }
-
-
 
 #overlay    {
   position:absolute;
@@ -420,6 +420,7 @@ button:focus {
 }
 
 .modal_container {
+  margin-top: 0vh;
   padding-top: 6em;
   transition: padding-top 0.3s;
 }
@@ -434,6 +435,8 @@ button:focus {
 
 .modal_project_name {
   background-color: #F6E03D;
+  color: #F6E03D;
+  font-size: 0.25em;
 }
 
 .curret {

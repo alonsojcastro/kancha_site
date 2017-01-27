@@ -1,3 +1,6 @@
+
+
+
 var current = 0;
 
 var modalImages = [
@@ -6,7 +9,6 @@ var modalImages = [
   "../img/modal/3.png",
   "../img/modal/4.png"
 ];
-
 $(document).ready( () => {
   playModal();
 });
@@ -15,7 +17,7 @@ var playModal = () => {
   setTimeout(function () {
     nextImage();
     playModal();
-  }, 3000);
+  }, 2500);
 }
 
 var nextImage = () => {

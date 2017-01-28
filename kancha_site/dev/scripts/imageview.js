@@ -2,9 +2,9 @@ var current = 0;
 var imageData = [
   {
     "category":"Arquitectura",
-    "title":"Casa Fiel",
+    "title":"La Casa Fiel Antes",
     "alt":"0",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "width":999,
     "height":651,
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/1_antes.jpg",
@@ -17,10 +17,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-
-    "title":"La Casa Fiel",
+    "title":"La Casa Fiel Después",
     "alt":"1",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/2_despues.jpg",
     "display_image": {
       "src":"../img/Arquitectura/LaCasaFiel/2_Despues.jpg",
@@ -31,9 +30,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel",
+    "title":"La Casa Fiel Frontis",
     "alt":"2",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/3_antes.jpg",
     "display_image":{
       "src":"../img/Arquitectura/LaCasaFiel/3_Antes.jpg",
@@ -44,9 +43,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel",
+    "title":"La Casa Fiel Frontis",
     "alt":"3",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/4_despues.jpg",
     "display_image":{
       "src":"../img/Arquitectura/LaCasaFiel/4_Despues.jpg",
@@ -57,9 +56,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel",
+    "title":"La Casa Fiel 5",
     "alt":"4",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/5_antes.jpg",
     "display_image":{
       "src":"../img/Arquitectura/LaCasaFiel/5.jpg",
@@ -70,9 +69,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel",
+    "title":"La Casa Fiel 6",
     "alt":"5",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/6_antes.jpg",
     "display_image":{
       "src":"../img/Arquitectura/LaCasaFiel/6.jpg",
@@ -83,9 +82,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel",
+    "title":"La Casa Fiel 7",
     "alt":"6",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/7_antes.jpg",
     "display_image":{
       "src":"../img/Arquitectura/LaCasaFiel/7.jpg",
@@ -96,9 +95,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel",
+    "title":"La Casa Fiel 8",
     "alt":"7",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/8_antes.jpg",
     "display_image":{
       "src":"../img/Arquitectura/LaCasaFiel/8.jpg",
@@ -109,9 +108,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel",
+    "title":"La Casa Fiel 9",
     "alt":"8",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/9_antes.jpg",
     "display_image":{
       "src":"../img/Arquitectura/LaCasaFiel/9.jpg",
@@ -122,9 +121,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel",
+    "title":"La Casa Fiel 10",
     "alt":"9",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/10_antes.jpg",
     "display_image":{
       "src":"../img/Arquitectura/LaCasaFiel/10.jpg",
@@ -544,20 +543,21 @@ window.onload = () => {
 
 
 var modal = (data) => {
-      if(data.display_image.orientation == "landscape"){
-        $('#landscape_image').attr("src",data.display_image.src);
-        $('#landscape').css("display","inline");
-        $('#portrait').css("display","none");
-      } else {
-        $('#portrait_image').attr("src",data.display_image.src);
-        $('#landscape').css("display","none");
-        $('#portrait').css("display","inline");
-      }
+  $('#viewer_title').text(data.title);
 
-      $('#viewer_title').text(data.title);
-      $('#viewer_description').text(data.description);
-      $('.current').text(current + ' / ' + imageData.length);
-      console.log('match found');
+  if(data.display_image.orientation === "landscape"){
+    $('#landscape_image').attr("src",data.display_image.src);
+    $('#landscape').css("display","inline");
+    $('#portrait').css("display","none");
+  } else {
+    $('#portrait_image').attr("src",data.display_image.src);
+    $('#landscape').css("display","none");
+    $('#portrait').css("display","inline");
+  }
+  // $('#viewer_title').text(data.title);
+  // $('#viewer_description').text(data.description);
+  // $('.current').text(current + ' / ' + imageData.length);
+  console.log('match found');
 }
 
 

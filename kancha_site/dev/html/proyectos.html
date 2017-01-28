@@ -1,265 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
-   <title>kancha</title>
-   <link rel="stylesheet" type="text/css" href="../styles/main.css">
-   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-   <script src="../scripts/imageview.js" defer></script>
+  <meta charset="utf-8">
+  <title>kancha</title>
+  <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../scripts/imageview.js" defer></script>
 </head>
-  <body>
+<body>
 
-    <div id="image_viewer_container">
-      <div id="landscape">
-        <h2 id="viewer_title">Title</h2>
-        <p id="viewer_description">Description</p>
-        <img id="landscape_image" src="" atl="current image">
-        <p class="current">0 / 0</p>
-      </div>
-      <div id="portrait">
-        <h2 id="viewer_title">Title</h2>
-        <p id="viewer_description">Description</p>
-        <img id="portrait_image" src="" atl="current image">
-        <p class="current">0 / 0</p>
-      </div>
-      <button id="next" onclick="next()">></button>
-      <button id="back" onclick="back()"><</button>
-      <button id="exit" onclick="exitViewer()">X</button>
+  <div id="image_viewer_container">
+    <div id="landscape">
+      <h2 id="viewer_title"></h2>
+      <!-- <p id="viewer_description">Description</p> -->
+      <img id="landscape_image" src="" atl="current image">
+      <p class="current"></p>
+    </div>
+    <div id="portrait">
+      <h2 id="viewer_title"></h2>
+      <!-- <p id="viewer_description">Description</p> -->
+      <img id="portrait_image" src="" atl="current image">
+      <p class="current"></p>
+    </div>
+    <button id="next" onclick="next()">></button>
+    <button id="back" onclick="back()"><</button>
+    <button id="exit" onclick="exitViewer()">X</button>
+  </div>
+
+  <nav id="nav_wrapper">
+
+    <div>
+      <a id="logo" href="index.html"><img src='../img/Kancha_logo_white.png'></a>
     </div>
 
-    <nav id="nav_wrapper">
-
-      <div>
-        <a id="logo" href="index.html"><img src='../img/Kancha_logo_white.png'></a>
-      </div>
-
-      <div id="menu">
-        <div class="dropdown">
-          <a href="studio.html"><button class="dropbtn">STUDIO</button></a>
-          <div class="dropdown-content">
-            <a href="studio.html#nosotros">NOSOTROS</a>
-            <a href="studio.html#contacto">CONTACTO</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <a href="proyectos.html"><button class="dropbtn">PROYECTOS</button></a>
-          <div class="dropdown-content">
-            <a href="proyectos.html">ARQUITECTURA</a>
-            <a href="proyectos.html#mobiliario">MOBILIARIO</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">SOCIAL</button>
-          <div class="dropdown-content">
-            <a href="https://www.facebook.com/kancha.studio">FACEBOOK</a>
-            <!-- <a href="#">TWITTER</a>
-            <a href="#">INSTAGRAM</a> -->
-          </div>
+    <div id="menu">
+      <div class="dropdown">
+        <a href="studio.html"><button class="dropbtn">STUDIO</button></a>
+        <div class="dropdown-content">
+          <a href="studio.html#nosotros">NOSOTROS</a>
+          <a href="studio.html#contacto">CONTACTO</a>
         </div>
       </div>
-
-      <div id="mobile_menu">
-        <div class="dropdown">
-          <a id="mobile_menu_button"href="#"><button class="dropbtn"><img id="mobile_menu_img" src="../img/mobilemenu.png"/></button></a>
-          <div class="dropdown-content">
-            <a onclick="" href="studio.html#nosotros">NOSOTROS</a>
-            <a href="studio.html#contacto">CONTACTO</a>
-            <a href="proyectos.html#arquitectura">ARQUITECTURA</a>
-            <a href="proyectos.html#mobiliario">MOBILIARIO</a>
-            <a href="https://www.facebook.com/kancha.studio">FACEBOOK</a>
-          </div>
+      <div class="dropdown">
+        <a href="proyectos.html"><button class="dropbtn">PROYECTOS</button></a>
+        <div class="dropdown-content">
+          <a href="proyectos.html">ARQUITECTURA</a>
+          <a href="proyectos.html#mobiliario">MOBILIARIO</a>
         </div>
       </div>
+      <div class="dropdown">
+        <button class="dropbtn">SOCIAL</button>
+        <div class="dropdown-content">
+          <a href="https://www.facebook.com/kancha.studio">FACEBOOK</a>
+          <!-- <a href="#">TWITTER</a>
+          <a href="#">INSTAGRAM</a> -->
+        </div>
+      </div>
+    </div>
 
-    </nav>
+    <div id="mobile_menu">
+      <div class="dropdown">
+        <a id="mobile_menu_button"href="#"><button class="dropbtn"><img id="mobile_menu_img" src="../img/mobilemenu.png"/></button></a>
+        <div class="dropdown-content">
+          <a onclick="" href="studio.html#nosotros">NOSOTROS</a>
+          <a href="studio.html#contacto">CONTACTO</a>
+          <a href="proyectos.html#arquitectura">ARQUITECTURA</a>
+          <a href="proyectos.html#mobiliario">MOBILIARIO</a>
+          <a href="https://www.facebook.com/kancha.studio">FACEBOOK</a>
+        </div>
+      </div>
+    </div>
 
-    <main id = "arquitectura">
+  </nav>
+
+  <main id = "arquitectura">
     <div>
       <h1>Arquitectura</h1>
       <div id="lacasafiel">
         <h2>La Casa Fiel</h2>
-        <div>
-          <div class="image_container" id="La_Casa_Fiel">
-            <p class="image_caption">La Casa Fiel</p>
-            <img class="grid_image" src="../img/Arquitectura/LaCasaFiel/formatted/1_antes.jpg" alt="0">
-          </div>
-          <div class="image_container" id="La_Casa_Fiel">
-            <p class="image_caption">La Casa Fiel</p>
-            <img class="grid_image" src="../img/Arquitectura/LaCasaFiel/formatted/2_despues.jpg" alt="1">
-          </div>
-          <div class="image_container" id="La_Casa_Fiel">
-            <p class="image_caption">La Casa Fiel</p>
-            <img class="grid_image" src="../img/Arquitectura/LaCasaFiel/formatted/3_antes.jpg" alt="2">
-          </div>
-          <div class="image_container" id="La_Casa_Fiel">
-            <p class="image_caption">La Casa Fiel</p>
-            <img class="grid_image" src="../img/Arquitectura/LaCasaFiel/formatted/4_despues.jpg" alt="3">
-          </div>
-          <div class="image_container" id="La_Casa_Fiel">
-            <p class="image_caption">La Casa Fiel</p>
-            <img class="grid_image" src="../img/Arquitectura/LaCasaFiel/formatted/5.jpg" alt="4">
-          </div>
-          <div class="image_container" id="La_Casa_Fiel">
-            <p class="image_caption">La Casa Fiel</p>
-            <img class="grid_image" src="../img/Arquitectura/LaCasaFiel/formatted/6.jpg" alt="5">
-          </div>
-          <div class="image_container" id="La_Casa_Fiel">
-            <p class="image_caption">La Casa Fiel</p>
-            <img class="grid_image" src="../img/Arquitectura/LaCasaFiel/formatted/7.jpg" alt="6">
-          </div>
-          <div class="image_container" id="La_Casa_Fiel">
-            <p class="image_caption">La Casa Fiel</p>
-            <img class="grid_image" src="../img/Arquitectura/LaCasaFiel/formatted/8.jpg" alt="7">
-          </div>
-          <div class="image_container" id="La_Casa_Fiel">
-            <p class="image_caption">La Casa Fiel</p>
-            <img class="grid_image" src="../img/Arquitectura/LaCasaFiel/formatted/9.jpg" alt="8">
-          </div>
-          <div class="image_container" id="La_Casa_Fiel">
-            <p class="image_caption">La Casa Fiel</p>
-            <img class="grid_image" src="../img/Arquitectura/LaCasaFiel/formatted/10.jpg" alt="9">
-          </div>
 
+        <div class="image_container" id="La_Casa_Fiel">
+          <p class="image_caption"></p>
+          <img class="grid_image" src="../img/Arquitectura/LaCasaFiel/formatted/2_despues.jpg" alt="0">
         </div>
+
       </div>
+
       <div id="cuadralaalborada">
         <h2>Cuadra La Alborada</h2>
-        <div class="image_container" id="La_Casa_Fiel">
-          <p class="image_caption">Cuadra La Alborada</p>
-          <img class="grid_image" src="../img/Arquitectura/CuadraLaAlborada/formatted/1.jpg" alt="10">
+        <div>
+          <div class="image_container" id="La_Casa_Fiel">
+            <p class="image_caption"></p>
+            <img class="grid_image" src="../img/Arquitectura/CuadraLaAlborada/formatted/1.jpg" alt="10">
+          </div>
         </div>
-        <div class="image_container" id="La_Casa_Fiel">
-          <p class="image_caption">Cuadra La Alborada</p>
-          <img class="grid_image" src="../img/Arquitectura/CuadraLaAlborada/formatted/2.jpg" alt="11">
-        </div>
-        <div class="image_container" id="La_Casa_Fiel">
-          <p class="image_caption">Cuadra La Alborada</p>
-          <img class="grid_image" src="../img/Arquitectura/CuadraLaAlborada/formatted/3.jpg" alt="12">
-        </div>
-        <div class="image_container" id="La_Casa_Fiel">
-          <p class="image_caption">Cuadra La Alborada</p>
-          <img class="grid_image" src="../img/Arquitectura/CuadraLaAlborada/formatted/4.jpg" alt="13">
-        </div>
-        <div class="image_container" id="La_Casa_Fiel">
-          <p class="image_caption">Cuadra La Alborada</p>
-          <img class="grid_image" src="../img/Arquitectura/CuadraLaAlborada/formatted/5.jpg" alt="14">
-        </div>
-        <div class="image_container" id="La_Casa_Fiel">
-          <p class="image_caption">Cuadra La Alborada</p>
-          <img class="grid_image" src="../img/Arquitectura/CuadraLaAlborada/formatted/6.jpg" alt="15">
-        </div>
-        <div class="image_container" id="La_Casa_Fiel">
-          <p class="image_caption">Cuadra La Alborada</p>
-          <img class="grid_image" src="../img/Arquitectura/CuadraLaAlborada/formatted/7.jpg" alt="16">
-        </div>
-        <div class="image_container" id="La_Casa_Fiel">
-          <p class="image_caption">Cuadra La Alborada</p>
-          <img class="grid_image" src="../img/Arquitectura/CuadraLaAlborada/formatted/8.jpg" alt="17">
-        </div>
-        <div class="image_container" id="La_Casa_Fiel">
-          <p class="image_caption">Cuadra La Alborada</p>
-          <img class="grid_image" src="../img/Arquitectura/CuadraLaAlborada/formatted/9.jpg" alt="18">
-        </div>
+
       </div>
-    </div>
-    <hr>
-    <div id="mobiliario"></div>
-    <div>
+
+      <div id="mobiliario"></div>
+
       <h1>Mobiliario</h1>
       <div id="oficinas">
         <h2>Oficinas</h2>
         <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
+          <p class="image_caption"></p>
           <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg" alt="19">
         </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/2.jpg" alt="20">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/3.jpg" alt="21">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/4.jpg" alt="22">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/5.jpg" alt="23">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/6.jpg" alt="24">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/7.jpg" alt="25">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/8.jpg" alt="26">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/9.jpg" alt="27">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/10.jpg" alt="28">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/11.jpg" alt="29">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/12.jpg" alt="30">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/13.jpg" alt="31">
-        </div>
-        <div class="image_container" id="Oficinas">
-          <p class="image_caption">Oficinas</p>
-          <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/14.jpg" alt="32">
-        </div>
       </div>
+
       <div id="dormitorios">
         <h2>Dormitorios</h2>
         <div class="image_container" id="Dormitorios">
-          <p class="image_caption">Dormitorios</p>
+          <p class="image_caption"></p>
           <img class="grid_image" src="../img/Mobiliario/Dormitorios/formatted/1.jpg" alt="33">
         </div>
-        <div class="image_container" id="Dormitorios">
-          <p class="image_caption">Dormitorios</p>
-          <img class="grid_image" src="../img/Mobiliario/Dormitorios/formatted/2.jpg" alt="34">
-        </div>
-        <div class="image_container" id="Dormitorios">
-          <p class="image_caption">Dormitorios</p>
-          <img class="grid_image" src="../img/Mobiliario/Dormitorios/formatted/3.jpg" alt="35">
-        </div>
       </div>
+
       <div id="bares">
         <h2>Bares</h2>
         <div class="image_container" id="Bares">
-          <p class="image_caption">Bares</p>
+          <p class="image_caption"></p>
           <img class="grid_image" src="../img/Mobiliario/Bares/formatted/1.jpg" alt="36">
         </div>
-        <div class="image_container" id="Bares">
-          <p class="image_caption">Bares</p>
-          <img class="grid_image" src="../img/Mobiliario/Bares/formatted/2.jpg" alt="37">
-        </div>
-        <div class="image_container" id="Bares">
-          <p class="image_caption">Bares</p>
-          <img class="grid_image" src="../img/Mobiliario/Bares/formatted/3.jpg" alt="38">
-        </div>
       </div>
+
       <div id="Salas_de_Estar">
         <h2 id="salasdeestar">Salas De Estar</h2>
         <div class="image_container" >
-          <p class="image_caption">Salas De Estar</p>
+          <p class="image_caption"></p>
           <img class="grid_image" src="../img/Mobiliario/Salas_de_Estar/formatted/1.jpg" alt="39">
         </div>
       </div>
@@ -267,20 +136,20 @@
 
   </main>
 
-  </body>
+</body>
 
-  <footer>
-    <h1>Kancha Studio</h1>
+<footer>
+  <h1>Kancha Studio</h1>
+  <div>
     <div>
-      <div>
-        <p>
-          Kancha es un estudio de arquitectura latino y joven,
-          fundado en Lima por dos egresados de la Facultad de Arquitectura de la Universidad Peruana de Ciencias Aplicadas.
-          Actualmente, la oficina se dedica al diseño de encargos muy variados; desde muebles, como cunas, bares,
-          escritorios y tarimas, hasta cuadras de caballos de áreas mayores a una hectárea, pasando por viviendas de playa
-          y de ciudad, ya sea como remodelaciones o como proyectos nuevos.
-        </p>
-      </div>
+      <p>
+        Kancha es un estudio de arquitectura latino y joven,
+        fundado en Lima por dos egresados de la Facultad de Arquitectura de la Universidad Peruana de Ciencias Aplicadas.
+        Actualmente, la oficina se dedica al diseño de encargos muy variados; desde muebles, como cunas, bares,
+        escritorios y tarimas, hasta cuadras de caballos de áreas mayores a una hectárea, pasando por viviendas de playa
+        y de ciudad, ya sea como remodelaciones o como proyectos nuevos.
+      </p>
+    </div>
     <div>
       <ul class="contact_list" style="display:inline-block">
         <li>teléfono: +51.964.309.541</li>
@@ -291,6 +160,6 @@
   <div>
     <p>Diseño y Desarrollo por Gentry Demchak y <a href="www.alonsocastrodesign.com">Alonso Castro</a></p>
   </div>
-  </footer>
+</footer>
 
 </html>

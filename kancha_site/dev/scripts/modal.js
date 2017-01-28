@@ -17,7 +17,7 @@ var playModal = () => {
   setTimeout(function () {
     nextImage();
     playModal();
-  }, 2500);
+  }, 3000);
 }
 
 var nextImage = () => {

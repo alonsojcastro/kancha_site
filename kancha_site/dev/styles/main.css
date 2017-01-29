@@ -424,7 +424,7 @@ body {
                           background-color: white;
                         }
 
-                        #viewer_title{
+                        .viewer_title{
                           position: absolute;
                           margin-top: -11vh;
                           padding: 0;

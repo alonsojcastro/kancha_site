@@ -543,7 +543,8 @@ window.onload = () => {
 
 
 var modal = (data) => {
-  $('#viewer_title').text(data.title);
+  console.log(data);
+  $('.viewer_title').text(data.title);
 
   if(data.display_image.orientation === "landscape"){
     $('#landscape_image').attr("src",data.display_image.src);
@@ -585,9 +586,7 @@ var back = () => {
 }
 
 var searchImage = (alt) => {
-  console.log('looking for match');
   for(var i = 0; i < imageData.length; i++){
-    console.log(alt + ' : ' + imageData[i].alt);
     if (alt == imageData[i].alt){
       current = i;
       modal(imageData[i]);

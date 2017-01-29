@@ -15,12 +15,12 @@ body {
   }
 
   h1 {
-    margin-top: 13vh;
+    margin-top: 15vh;
     font-size: 6em;
   }
 
   h2 {
-    padding-top: 2vh;
+    padding-top: 13vh;
     font-size:3.5em;
   }
 
@@ -40,6 +40,22 @@ body {
   #menu button {
     font-size: 1em;
     font-family: roboto;
+  }
+
+  #description_text{
+    float:right;
+    position:relative;
+    display:inline-block;
+    overflow:auto;
+    margin-bottom: auto;
+    width: calc(50% - 4px);
+    margin-right: 4px;
+    font-size: 0.67em;
+  }
+  @media (max-width: 1080px) {
+    #description_text {
+      width: auto;
+    }
   }
 
   #nav_wrapper {
@@ -189,9 +205,8 @@ body {
                     position:relative;
                     display:inline-block;
                     overflow: hidden;
-                    margin-bottom: 8px;
+                    margin-bottom: 30vh;
                     width: calc(50% - 4px);
-                    marging-right: 8px;
                   }
                   @media (max-width: 1080px) {
                     .image_container {
@@ -206,6 +221,7 @@ body {
 
                   .grid_image:hover {
                     cursor: pointer;
+                    opacity: 0.15;
                     transform: scale3d:(1.2,1.2,1);
                   }
 
@@ -276,6 +292,12 @@ body {
 
                   footer h1 {
                     margin-top: 10vh;
+                    padding-top: 5vh;
+                    margin-bottom: 0;
+
+                  }
+                  footer h1 div div p {
+                    margin-top: 2vh;
                     padding-top: 5vh;
 
                   }
@@ -426,7 +448,7 @@ body {
                         }
 
                         .modal_image_container {
-                          /*height: 60vh;*/
+                          /*height: 100vh;*/
                           float: left;
                         }
 

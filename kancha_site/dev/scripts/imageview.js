@@ -30,7 +30,7 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel Frontis",
+    "title":"La Casa Fiel Frontis Antes",
     "alt":"2",
     "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/3_antes.jpg",
@@ -43,7 +43,7 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel Frontis",
+    "title":"La Casa Fiel Frontis Despues",
     "alt":"3",
     "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/4_despues.jpg",
@@ -134,9 +134,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Cuadra La Alborada",
+    "title":"Cuadra La Alborada 1",
     "alt":"10",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/CuadraLaAlborada/formatted/1.jpg",
     "display_image":{
       "src":"../img/Arquitectura/CuadraLaAlborada/1.jpg",
@@ -147,9 +147,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Cuadra La Alborada",
+    "title":"Cuadra La Alborada 2",
     "alt":"11",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/CuadraLaAlborada/formatted/2.jpg",
     "display_image":{
       "src":"../img/Arquitectura/CuadraLaAlborada/2.jpg",
@@ -160,9 +160,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Cuadra La Alborada",
+    "title":"Cuadra La Alborada 3",
     "alt":"12",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/CuadraLaAlborada/formatted/3.jpg",
     "display_image":{
       "src":"../img/Arquitectura/CuadraLaAlborada/3.jpg",
@@ -173,9 +173,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Cuadra La Alborada",
+    "title":"Cuadra La Alborada 4",
     "alt":"13",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/CuadraLaAlborada/formatted/4.jpg",
     "display_image":{
       "src":"../img/Arquitectura/CuadraLaAlborada/4.jpg",
@@ -186,9 +186,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Cuadra La Alborada",
+    "title":"Cuadra La Alborada 5",
     "alt":"14",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/CuadraLaAlborada/formatted/5.jpg",
     "display_image":{
       "src":"../img/Arquitectura/CuadraLaAlborada/5.jpg",
@@ -199,9 +199,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Cuadra La Alborada",
+    "title":"Cuadra La Alborada 6",
     "alt":"15",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/CuadraLaAlborada/formatted/6.jpg",
     "display_image":{
       "src":"../img/Arquitectura/CuadraLaAlborada/6.jpg",
@@ -212,9 +212,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Cuadra La Alborada",
+    "title":"Cuadra La Alborada 7",
     "alt":"16",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/CuadraLaAlborada/formatted/7.jpg",
     "display_image":{
       "src":"../img/Arquitectura/CuadraLaAlborada/7.jpg",
@@ -225,9 +225,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Cuadra La Alborada",
+    "title":"Cuadra La Alborada 8",
     "alt":"17",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/CuadraLaAlborada/formatted/8.jpg",
     "display_image":{
       "src":"../img/Arquitectura/CuadraLaAlborada/8.jpg",
@@ -238,9 +238,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Cuadra La Alborada",
+    "title":"Cuadra La Alborada 9",
     "alt":"18",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/CuadraLaAlborada/formatted/9.jpg",
     "display_image":{
       "src":"../img/Arquitectura/CuadraLaAlborada/9.jpg",
@@ -251,9 +251,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 1",
     "alt":"19",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/1.jpg",
@@ -264,9 +264,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 2",
     "alt":"20",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/2.jpg",
@@ -277,9 +277,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 3",
     "alt":"21",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/3.jpg",
@@ -290,9 +290,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 4",
     "alt":"22",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/4.jpg",
@@ -303,9 +303,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 5",
     "alt":"23",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/5.jpg",
@@ -316,9 +316,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 6",
     "alt":"24",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/6.jpg",
@@ -329,9 +329,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 7",
     "alt":"25",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/7.jpg",
@@ -342,9 +342,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 8",
     "alt":"26",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/8.jpg",
@@ -355,9 +355,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 9",
     "alt":"27",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/9.jpg",
@@ -368,9 +368,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 10",
     "alt":"28",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/10.jpg",
@@ -381,9 +381,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 11",
     "alt":"29",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/11.jpg",
@@ -393,9 +393,9 @@ var imageData = [
     }
   },{
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 12",
     "alt":"30",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/12.jpg",
@@ -406,9 +406,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 13",
     "alt":"31",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/13.jpg",
@@ -419,9 +419,9 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Oficinas",
+    "title":"Oficina Diagonal 14",
     "alt":"32",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Oficinas/Diagonal/14.jpg",
@@ -432,9 +432,9 @@ var imageData = [
   },
   {
     "category":"Mobiliario",
-    "title":"Dormitorios",
+    "title":"El Cuarto de Claudito",
     "alt":"33",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Dormitorios/El_cuarto_de_Claudito.jpg",
@@ -445,9 +445,9 @@ var imageData = [
   },
   {
     "category":"Mobiliario",
-    "title":"Dormitorios",
+    "title":"El Cuarto de Mafer",
     "alt":"34",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Dormitorios/El_cuarto_de_Mafer_1.jpg",
@@ -458,9 +458,9 @@ var imageData = [
   },
   {
     "category":"Mobiliario",
-    "title":"Dormitorios",
+    "title":"El Cuarto de Santiago y Vero",
     "alt":"35",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Dormitorios/El_cuarto_de_Santiago_Vero.jpg",
@@ -473,7 +473,7 @@ var imageData = [
     "category":"Mobiliario",
     "title":"Bar Canessa",
     "alt":"36",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Bares/Bar_Canessa.jpg",
@@ -486,7 +486,7 @@ var imageData = [
     "category":"Mobiliario",
     "title":"Bar Rubio",
     "alt":"37",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Bares/Bar_Rubio.jpg",
@@ -499,7 +499,7 @@ var imageData = [
     "category":"Mobiliario",
     "title":"Bar Willstatter",
     "alt":"38",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Bares/Bar_Willstatter.jpg",
@@ -510,9 +510,9 @@ var imageData = [
   },
   {
     "category":"Mobiliario",
-    "title":"Salas de Estar",
+    "title":"Sala Álvarez",
     "alt":"39",
-    "description":"DESCRIPTION HERE",
+    "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",
     "display_image":{
       "src":"../img/Mobiliario/Salas_de_Estar/Sala_Alvarez.jpg",

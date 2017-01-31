@@ -2,7 +2,7 @@ var current = 0;
 var imageData = [
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel Antes",
+    "title":"Antes",
     "alt":"0",
     "description":"",
     "width":999,
@@ -17,7 +17,7 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel Después",
+    "title":"Después",
     "alt":"1",
     "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/2_despues.jpg",
@@ -30,7 +30,7 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel Frontis Antes",
+    "title":"Frontis Antes",
     "alt":"2",
     "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/3_antes.jpg",
@@ -43,7 +43,7 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"La Casa Fiel Frontis Despues",
+    "title":"Frontis Despues",
     "alt":"3",
     "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/LaCasaFiel/formatted/4_despues.jpg",
@@ -238,7 +238,7 @@ var imageData = [
   },
   {
     "category":"Arquitectura",
-    "title":"Cuadra La Alborada 9",
+    "title":"La Alborada 9",
     "alt":"18",
     "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Arquitectura/CuadraLaAlborada/formatted/9.jpg",
@@ -458,7 +458,7 @@ var imageData = [
   },
   {
     "category":"Mobiliario",
-    "title":"El Cuarto de Santiago y Vero",
+    "title":"Santiago y Vero",
     "alt":"35",
     "description":"",
     "formatted_image":"file:///Users/gentrydemchak/Documents/alonso/kancha_site/kancha_site/dev/img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg",

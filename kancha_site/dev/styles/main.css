@@ -458,6 +458,7 @@ body {
                         }
 
                         .modal_container {
+                          position: relative;
                           margin-top: 0vh;
                           padding-top: 3.5em;
                           transition: padding-top 0.3s;
@@ -550,3 +551,35 @@ body {
                           }
 
                         }
+
+.loader {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    border: 6em solid #f3f3f3; /* Light grey */
+    border-top: 6em solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    z-index: -1;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#scroll_button {
+  position: absolute;
+  z-index: 998;
+  display: inline;
+  border: none;
+  background-color: rgba(0,0,0,0.75);
+  border-radius: 100%;
+  padding 1em;
+  top: 80vh;
+  left: 50vw;
+  width: 6em;
+  height: 6em;
+}

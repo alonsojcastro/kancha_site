@@ -541,6 +541,11 @@ window.onload = () => {
 
 };
 
+var scrollto = () => {
+  $('html,body').animate({
+    scrollTop: $("#projectos").offset().top
+  });
+}
 
 var modal = (data) => {
   console.log(data);

@@ -17,6 +17,7 @@ body {
   h1 {
     margin-top: 15vh;
     font-size: 6em;
+    text-align: center;
   }
 
   h2 {
@@ -139,13 +140,14 @@ body {
 
 
                   .dropbtn {
-                    padding: 0 1em 0 1em;
+                    padding: none;
                     border: none;
                     cursor: pointer;
                     background-color: transparent;
-                    height: 6em;
                     min-width: 10em;
-                    transition: background-color 0.3s
+                    transition: background-color 0.3s;
+                    text-align: left;
+                    border-bottom: 0.1em solid black;
                   }
 
                   .dropdown {
@@ -159,20 +161,20 @@ body {
                     display: none;
                     position: absolute;
                     min-width: 10em;
-                    background-color: lightgrey;
-                    box-shadow:0px 20px 300px -20px rgba(0,0,0,0.75)
+                    /*background-color: lightgrey;*/
+                    /*box-shadow:0px 20px 300px -20px rgba(0,0,0,0.75)*/
                   }
 
                   .dropdown-content a {
                     color: #0E0D0C;
                     /*padding: 12px 16px;*/
-                    padding: 1em;
+                    padding: 0.5em;
                     text-decoration: none;
                     display: block;
                     transition: background-color 0.3s
                   }
 
-                  .dropdown-content a:hover {background-color: #F6E03D}
+                  .dropdown-content a:hover {background-color: lightgrey}
 
                   .dropdown:hover .dropdown-content {
                     display: block;
@@ -525,6 +527,7 @@ body {
 
                           .dropbtn {
                             height: 15em;
+                            border: none;
                           }
 
                           .dropdown-content {
@@ -540,6 +543,16 @@ body {
                             font-size: 2em;
                             padding: 1em;
                             font-family: roboto;
+                          }
+
+                          .dropdown-content a:hover {background-color: #F6E03D}
+
+                          .dropdown:hover .dropdown-content {
+                            display: block;
+                          }
+
+                          .dropdown:hover .dropbtn {
+                            background-color: lightgrey;
                           }
 
                           .left p {

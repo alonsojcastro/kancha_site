@@ -21,7 +21,7 @@ body {
   }
 
   h2 {
-    padding-top: 13vh;
+    padding-top: 14.5vh;
     font-size:3.5em;
   }
 
@@ -229,11 +229,14 @@ body {
                     margin-bottom: 30vh;
                     width: calc(50% - 4px);
                   }
+
                   @media (max-width: 1080px) {
                     .image_container {
                       width: auto;
+                      margin-bottom: 1em;
                     }
                   }
+
 
                   .grid_image {
                     transition: all 0.5s linear;
@@ -363,7 +366,8 @@ body {
                     .image_container:hover #overlay {
                       opacity:1;}
 
-                      #plus       {  font-family:Helvetica;
+                      #plus       {
+                        font-family:Helvetica;
                         font-weight:900;
                         color:rgba(255,255,255,.85);
                         font-size:96px;}
@@ -513,13 +517,37 @@ body {
 
 
 
-                        @media (max-width: 720px) {
+                        @media (max-width: 1080px) {
                           #scroll_button {
                             display: none;
                           }
 
+                          /*body{
+                              background-color: #F6E03D;
+                          }*/
+                          main{
+                          background-color: white;
+                          z-index: 10000;
+                          }
+
+                          #proyectos{
+                            margin-top: 10em;
+                          }
                           h1 {
-                            font-size: 6em;
+                            font-size: 5.4em;
+                            margin-top: 2em;
+                          }
+                          h2 {
+                            font-size:3.5em;
+                          }
+                          div{
+                            display: inline-block;
+                            margin-top: 5em;
+                          }
+
+                          #description_text{
+                            margin-top: 1em;
+                            margin-bottom: 10em;
                           }
 
                           #menu {
@@ -528,17 +556,15 @@ body {
 
                           #mobile_menu {
                             display: block;
-                            margin-top: 2vh;
 
                           }
 
                           #menu_img{
-                            width: 9em;
-                            /*margin-top: 3vh;*/
+                            width: 10em;
                           }
 
                           #nav_wrapper {
-                            height: 9.98em;
+                            height: 10em;
                           }
 
                           #logo {
@@ -550,54 +576,61 @@ body {
                             display: inline-block;
                             /* margin-left: 10vw; */
                             float: right;
+
                           }
 
                           #mobile_menu_button {
-
-                            height: 3em;
+                            height: 4em;
                             display: block;
                           }
 
                           .dropbtn {
-                            height: 8em;
+                            height: 10em;
                             border: none;
                           }
 
                           .dropdown-content {
                             display: none;
                             position: absolute;
-                            margin-top: 3.5vh;
+                            margin-top: 5vh;
                             /* min-width: 10em; */
                             width: 100vw;
                             right: 0px;
                             background-color: lightgrey;
+                            overflow:auto;
+
                           }
 
                           .dropdown-content a {
-                            font-size: 1.5em;
-                            padding: 1em;
+                            font-size: 6em;
+                            padding: 0.80em;
                             font-family: roboto;
-
                           }
 
                           .dropdown-content a:hover {
-                            background-color: #F6E03D
+                            background-color: #F6E03D;
                           }
 
-                          .dropdown:hover .dropdown-content {
+                          /*.dropdown:hover .dropdown-content {
                             display: block;
-                          }
+                          }*/
 
                           .dropdown:hover .dropbtn {
                             background-color: lightgrey;
                           }
 
                           .left p {
-                            font-size: 1em;
+                            font-size: 6em;
                           }
 
                           .modal_container {
                             padding-top: 10em;
+                            width:100%;
+                          }
+                          .modal_project_name {
+                            background-color: white;
+                            color: white;
+                            font-size: 0.025em;
                           }
 
                         }

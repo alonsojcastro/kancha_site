@@ -533,20 +533,18 @@ window.onload = () => {
     console.log(gridImages[i].src);
 
     gridImages[i].addEventListener('click', (event) => {
-      event.preventDefault();
+      // event.preventDefault();
       $(document).ready(()=>{$('#image_viewer_container').toggle();});
       searchImage(gridImages[i].alt,true);
     }, false);
   }
 
 };
-
 var scrollto = () => {
   $('html,body').animate({
     scrollTop: $("#proyectos").offset().top
   });
 }
-
 var modal = (data) => {
   console.log(data);
   $('.viewer_title').text(data.title);

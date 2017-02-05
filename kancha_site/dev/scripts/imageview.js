@@ -543,7 +543,7 @@ window.onload = () => {
 
 var scrollto = () => {
   $('html,body').animate({
-    scrollTop: $("#projectos").offset().top
+    scrollTop: $("#proyectos").offset().top
   });
 }
 

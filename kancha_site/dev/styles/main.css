@@ -62,12 +62,12 @@ body {
   #nav_wrapper {
     position: fixed;
     width: 100vw;
-    height: 3em;
+    height: 5.95em;
     margin: 0 auto;
     top:0px;
     background-color: #F6E03D;
     z-index: 1000;
-    transition: ease-out height 0.3s;
+    /*transition: ease-out height 0.3s;*/
 
   }
 
@@ -138,9 +138,9 @@ body {
                 #nav_wrapper ul li:hover > ul {
                   display: block; }
 
-                  #nav_wrapper:hover {
+                  /*#nav_wrapper:hover {
                     height: 6em;
-                  }
+                  }*/
 
 
                   .dropbtn {
@@ -158,8 +158,8 @@ body {
                     position: relative;
                     display: inline-block;
                     /*margin-left: 10vw;*/
-                    height: 3em;
-                    margin-right: 5em
+                    height: 2em;
+
                   }
 
                   .dropdown-content {
@@ -193,10 +193,24 @@ body {
                     display: none;
                   }
 
+                  #scroll_button {
+                    position: absolute;
+                    z-index: 998;
+                    display: inline;
+                    border: none;
+                    background-color: rgba(0,0,0,0.50);
+                    border-radius: 100%;
+                    padding 1em;
+                    top: 17vh;
+                    left: 46.50vw;
+                    width: 6em;
+                    height: 6em;
+                  }
+
                   /*# sourceMappingURL=main.css.map */
 
                   main {
-                    margin-top:10vh;
+                    margin-top:30vh;
                     padding: 0 10vw 10vw 10vw;
                   }
 
@@ -499,7 +513,10 @@ body {
 
 
 
-                        @media (max-width: 1080px) {
+                        @media (max-width: 720px) {
+                          #scroll_button {
+                            display: none;
+                          }
 
                           h1 {
                             font-size: 6em;
@@ -511,10 +528,17 @@ body {
 
                           #mobile_menu {
                             display: block;
+                            margin-top: 2vh;
+
+                          }
+
+                          #menu_img{
+                            width: 9em;
+                            /*margin-top: 3vh;*/
                           }
 
                           #nav_wrapper {
-                            height: 12em;
+                            height: 9.98em;
                           }
 
                           #logo {
@@ -525,23 +549,24 @@ body {
                             position: relative;
                             display: inline-block;
                             /* margin-left: 10vw; */
-                            height: 10em;
                             float: right;
                           }
 
                           #mobile_menu_button {
-                            height: 10em;
+
+                            height: 3em;
                             display: block;
                           }
 
                           .dropbtn {
-                            height: 15em;
+                            height: 8em;
                             border: none;
                           }
 
                           .dropdown-content {
                             display: none;
                             position: absolute;
+                            margin-top: 3.5vh;
                             /* min-width: 10em; */
                             width: 100vw;
                             right: 0px;
@@ -549,12 +574,15 @@ body {
                           }
 
                           .dropdown-content a {
-                            font-size: 2em;
+                            font-size: 1.5em;
                             padding: 1em;
                             font-family: roboto;
+
                           }
 
-                          .dropdown-content a:hover {background-color: #F6E03D}
+                          .dropdown-content a:hover {
+                            background-color: #F6E03D
+                          }
 
                           .dropdown:hover .dropdown-content {
                             display: block;
@@ -590,18 +618,4 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
-#scroll_button {
-  position: absolute;
-  z-index: 998;
-  display: inline;
-  border: none;
-  background-color: rgba(0,0,0,0.75);
-  border-radius: 100%;
-  padding 1em;
-  top: 80vh;
-  left: 50vw;
-  width: 6em;
-  height: 6em;
 }

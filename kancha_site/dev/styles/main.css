@@ -538,11 +538,11 @@ body {
                             margin-top: 2em;
                           }
                           h2 {
+                            margin-top: 15em;
                             font-size:3.5em;
                           }
                           div{
-                            display: inline-block;
-                            margin-top: 5em;
+                            display: inline;
                           }
 
                           #description_text{

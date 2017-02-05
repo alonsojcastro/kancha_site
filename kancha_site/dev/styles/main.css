@@ -51,7 +51,7 @@ body {
     margin-bottom: auto;
     width: calc(50% - 4px);
     margin-right: 4px;
-    font-size: 0.67em;
+    font-size: 0.75em;
   }
   @media (max-width: 1080px) {
     #description_text {
@@ -531,23 +531,32 @@ body {
                           }
 
                           #proyectos{
-                            margin-top: 10em;
+                            margin-top: 8em;
+                            margin-bottom: 1em;
                           }
+
                           h1 {
-                            font-size: 5.4em;
+                            font-size: 5.5em;
                             margin-top: 2em;
+                            margin-bottom: 0em;
                           }
                           h2 {
-                            margin-top: 15em;
+                            margin-top: 10em;
                             font-size:3.5em;
                           }
-                          div{
-                            display: inline;
+
+                          #arqui{
+                            margin-top: 1em;
+                            margin-bottom: 1em;
+                          }
+
+                          #lafiel{
+                            margin-top: 0.25em;
                           }
 
                           #description_text{
                             margin-top: 1em;
-                            margin-bottom: 10em;
+                            margin-bottom: 6em;
                           }
 
                           #menu {

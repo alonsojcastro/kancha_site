@@ -5,13 +5,14 @@ body {
 
   p {
     font-size: 1.5em;
-    font-family: sans-serif;
+    font-family: avenir;
     font-weight: lighter;
     color: grey;
   }
 
   h1,h2,h3 {
-    font-family: roboto;
+    font-family: avenir;
+    font-weight: bold;
   }
 
   h1 {

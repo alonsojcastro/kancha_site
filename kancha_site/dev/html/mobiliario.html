@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>kancha</title>
+  <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../scripts/imageview.js" defer></script>
+</head>
+<body>
+
+  <div id="image_viewer_container">
+    <div id="landscape">
+      <h2 class="viewer_title">title</h2>
+      <p id="viewer_description"></p>
+      <img id="landscape_image" src="" atl="current image">
+      <p class="current"></p>
+    </div>
+    <div id="portrait">
+      <h2 class="viewer_title">title</h2>
+      <p id="viewer_description"></p>
+      <img id="portrait_image" src="" atl="current image">
+      <p class="current"></p>
+    </div>
+    <button id="next" onclick="next()">></button>
+    <button id="back" onclick="back()"><</button>
+    <button id="exit" onclick="exitViewer()">X</button>
+  </div>
+
+  <nav id="nav_wrapper">
+
+    <div>
+      <a id="logo" href="index.html"><img src='../img/Kancha_logo_white.png'></a>
+    </div>
+
+    <div id="menu">
+      <div class="dropdown">
+        <a href="studio.html"><button class="dropbtn">STUDIO</button></a>
+        <div class="dropdown-content">
+          <a href="studio.html#nosotros">NOSOTROS</a>
+          <a href="studio.html#contacto">CONTACTO</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="proyectos.html"><button class="dropbtn">PROYECTOS</button></a>
+        <div class="dropdown-content">
+          <a href="arquitectura.html">ARQUITECTURA</a>
+          <a href="mobiliario.html">MOBILIARIO</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">SOCIAL</button>
+        <div class="dropdown-content">
+          <a href="https://www.facebook.com/kancha.studio">FACEBOOK</a>
+          <!-- <a href="#">TWITTER</a>
+          <a href="#">INSTAGRAM</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile_menu">
+      <div class="dropdown">
+        <a id="mobile_menu_button"href="#"><button class="dropbtn"><img id="mobile_menu_img" src="../img/mobilemenu.png"/></button></a>
+        <div class="dropdown-content">
+          <a onclick="" href="studio.html#nosotros">NOSOTROS</a>
+          <a href="studio.html#contacto">CONTACTO</a>
+          <a href="proyectos.html#arquitectura">ARQUITECTURA</a>
+          <a href="proyectos.html#mobiliario">MOBILIARIO</a>
+          <a href="https://www.facebook.com/kancha.studio">FACEBOOK</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <main>
+
+  <div id="mobiliario"></div>
+
+  <h1 id="mobi">Mobiliario</h1>
+  <div id="oficinas">
+    <h2 id="ofi">Oficinas</h2>
+    <div class="image_container" id="Oficinas">
+      <p class="image_caption"></p>
+      <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg" alt="19">
+    </div>
+    <div id="description_text">
+      <p>
+        Un suizo y un español contrataron a una peruana y crearon una empresa; les fue bien y decidieron mudarse
+        al corazón de Miraflores: el Parque Kennedy. Ambos tienen gustos muy específicos y aparentemente opuestos,
+        así que los que hicimos fue trabajar con un punto medio entre lo minimalista y lo vintage combinando el
+        liso blanco de la pintura acrílica con la textura de la madera wash. El encargo consistió en implementar
+        los tres ambientes de la oficina sin alterar su arquitectura moderna de los años sesenta.
+      </p>
+      <p>
+        El área principal es mixta, ya que contiene a la recepción y al lugar de trabajo de cuatro colaboradores;
+        donde para tamizar esa privacidad diseñamos un mueble que funciona de divisor -ayudado por sus verticales
+        que van girando según el punto visual del usuario- al mismo tiempo que de librero, pudiendo utilizar las
+        mismas verticales como apoyo.
+      </p>
+      <p>
+        Para la oficina de gerencia se pensó en un gran tablero llano, solo interrumpido por dos nichos
+        donde colocar objetos personales para que no incomoden y conectarse a la corriente; al fondo, un aparador
+        que corrija la asimetría del espacio. Por último, el directorio es tan simple como un mesón blanco muy fino
+        apoyado suavemente sobre una estructura metálica, lineal y de color negro.
+      </p>
+    </div>
+  </div>
+
+  <div id="dormitorios">
+    <h2>Dormitorios</h2>
+    <div class="image_container" id="Dormitorios">
+      <p class="image_caption"></p>
+      <img class="grid_image" src="../img/Mobiliario/Dormitorios/formatted/1.jpg" alt="33">
+    </div>
+    <div id="description_text">
+      <p>
+        El Cuarto de Claudito
+        Dormitorio para un niño al que le encanta el anaranjado y armar modelos de lego.
+      </p>
+      <p>El Cuarto de Mafer
+        Dormitorio para una adolescente que utiliza el mismo espacio para dormir, estudiar y descansar.
+      </p>
+      <p>
+        El Cuarto de Santiago &amp Vero
+        Dormitorio para una pareja de recién casados que buscaba tener todo en un solo mueble.
+      </p>
+    </div>
+  </div>
+
+  <div id="bares">
+    <h2>Bares</h2>
+    <div class="image_container" id="Bares">
+      <p class="image_caption"></p>
+      <img class="grid_image" src="../img/Mobiliario/Bares/formatted/1.jpg" alt="36">
+    </div>
+    <div id="description_text">
+      <p>
+        El bar Alzamora
+        Bar clásico que calza en un nicho.
+      </p>
+      <p>
+        El bar Willstatter
+        Bar minimalista que baila con un balcón republicano.
+      </p>
+      <p>
+        El bar Canessa
+        Bar contemporáneo que se apoya sobre una pared.
+      </p>
+    </div>
+  </div>
+
+  <div id="Salas_de_Estar">
+    <h2 id="salasdeestar">Salas De Estar</h2>
+    <div class="image_container" >
+      <p class="image_caption"></p>
+      <img class="grid_image" src="../img/Mobiliario/Salas_de_Estar/formatted/1.jpg" alt="39">
+    </div>
+  </div>
+
+</div>
+
+</main>
+
+</body>
+
+<footer>
+  <h1>Kancha Studio</h1>
+  <div>
+    <div>
+      <p>
+        Kancha es un estudio de arquitectura latino y joven,
+        fundado en Lima por dos egresados de la Facultad de Arquitectura de la Universidad Peruana de Ciencias Aplicadas.
+        Actualmente, la oficina se dedica al diseño de encargos muy variados; desde muebles, como cunas, bares,
+        escritorios y tarimas, hasta cuadras de caballos de áreas mayores a una hectárea, pasando por viviendas de playa
+        y de ciudad, ya sea como remodelaciones o como proyectos nuevos.
+      </p>
+    </div>
+    <div>
+      <ul class="contact_list" style="display:inline-block">
+        <li>teléfono: +51.964.309.541</li>
+        <li>e-mail: hola@kancha.studio</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <p>Diseño y Desarrollo por <a href="https://gentrydemchak.com"> Gentry Demchak</a> y <a href="http://www.alonsocastrodesign.com">Alonso Castro</a></p>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../scripts/imageview.js" defer></script>
+</html>

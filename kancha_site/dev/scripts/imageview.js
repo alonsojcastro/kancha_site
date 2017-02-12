@@ -540,11 +540,19 @@ window.onload = () => {
   }
 
 };
+
+// var scrollto = () => {
+//   $('html,body').animate({
+//     scrollTop: $("#proyectos").offset().top
+//   });
+// }
+
 var scrollto = () => {
   $('html,body').animate({
-    scrollTop: $("#proyectos").offset().top
+    scrollTop: 600
   });
 }
+
 var modal = (data) => {
   console.log(data);
   $('.viewer_title').text(data.title);

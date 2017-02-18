@@ -19,8 +19,8 @@
       <div class="dropdown">
         <a href="studio.html"><button class="dropbtn">STUDIO</button></a>
         <div class="dropdown-content">
-          <a href="studio.html#nosotros">NOSOTROS</a>
-          <a href="studio.html#contacto">CONTACTO</a>
+          <a href="studio.html">NOSOTROS</a>
+          <a onclick="scrollToContact()">CONTACTO</a>
         </div>
       </div>
       <div class="dropdown">
@@ -59,46 +59,42 @@
 
       <div>
         <div class="nosotros_container">
-            <img style="max-width:100%;" src="../img/nosotros.jpg" alt="nosotros">
-          <p>
-            Nuestra misión y visión es brindar calidad al estilo de vida de las personas, mejorarlo a través
-            de un diseño funcional, estético y contemporáneo, tanto exterior como interiormente; para de esta
-            manera trascender al impacto del proyecto desde el cliente y usuario hasta el peatón que solo
-            pase por su lado.
-          </p>
-          <h2>Inspiración</h2>
-          <p>
-            Para Andrés Calamaro “las musas no son canciones urgentes” y para nosotros tampoco. La inspiración
-            no es algo mágico “que viene de ninguna parte y va a hacia ningún lugar”, no es que nos sentemos en
-            un café con una servilleta y de pronto una casa se nos aparezca entre sueños; la inspiración proviene
-            básicamente de la experiencia previa, de los referentes, del cliente y del contexto.
-          </p>
-          <p>
-            La experiencia es todo el conocimiento adquirido hasta el momento exacto de un diseño determinado, desde
-            lo aprendido en la universidad hasta los proyectos dibujados y ya ejecutados.
-          <p>
-            Los referentes son una amalgama entre nuestros arquitectos contemporáneos favoritos y aquellos genios que
-            a lo largo de la historia han marcado una diferencia en la forma de aproximarnos al diseño de los espacios
-            y han creado una tendencia mundial que trasciende a la mera moda pasajera y trivial; podríamos citar
-            decenas pero los resumiremos en algunos cuantos, por un lado Rafael Moneo, Aires Mateus y Herzog &amp; de Meuron
-            y por el otro Mies van der Rohe, Luis Barragán y Oscar Niemeyer.
-          </p>
-          <p>
-            El cliente es fundamental. Todo comienza y termina con él. Es él quien trae el encargo, quien tiene la
-            necesidad de algo y el atrevimiento de soñarlo real; él aporta su estilo de vida en base al cual nosotros
-            proyectamos y será quien finalizado el proceso, habite los espacios y nos haga la mejor y más sincera crítica.
-          </p>
-          <p>
-            Por último, el contexto es esencial y puede ser natural o artificial, rural o urbano, un elemento geográfico
-            o un edificio vecino pre existente. En ambos casos creemos y queremos ser siempre una extensión armoniosa de
-            lo que en ese lugar ya se encuentra.
-          </p>
-        </div>
+            <!-- <img style="max-width:100%;" src="../img/nosotros.jpg" alt="nosotros"> -->
+            <div class="contact_text_container">
+              <p class="contact_text_overlay">
+                Nuestra misión y visión es brindar calidad al estilo de vida de las personas, mejorarlo a través
+                de un diseño funcional, estético y contemporáneo, tanto exterior como interiormente; para de esta
+                manera trascender al impacto del proyecto desde el cliente y usuario hasta el peatón que solo
+                pase por su lado.
+                <br>
+                Para Andrés Calamaro “las musas no son canciones urgentes” y para nosotros tampoco. La inspiración
+                no es algo mágico “que viene de ninguna parte y va a hacia ningún lugar”, no es que nos sentemos en
+                un café con una servilleta y de pronto una casa se nos aparezca entre sueños; la inspiración proviene
+                básicamente de la experiencia previa, de los referentes, del cliente y del contexto.
+                <br>
+                La experiencia es todo el conocimiento adquirido hasta el momento exacto de un diseño determinado, desde
+                lo aprendido en la universidad hasta los proyectos dibujados y ya ejecutados.
+                <br>
+                Los referentes son una amalgama entre nuestros arquitectos contemporáneos favoritos y aquellos genios que
+                a lo largo de la historia han marcado una diferencia en la forma de aproximarnos al diseño de los espacios
+                y han creado una tendencia mundial que trasciende a la mera moda pasajera y trivial; podríamos citar
+                decenas pero los resumiremos en algunos cuantos, por un lado Rafael Moneo, Aires Mateus y Herzog &amp; de Meuron
+                y por el otro Mies van der Rohe, Luis Barragán y Oscar Niemeyer.
+                </br>
+                El cliente es fundamental. Todo comienza y termina con él. Es él quien trae el encargo, quien tiene la
+                necesidad de algo y el atrevimiento de soñarlo real; él aporta su estilo de vida en base al cual nosotros
+                proyectamos y será quien finalizado el proceso, habite los espacios y nos haga la mejor y más sincera crítica.
+                <br>
+                Por último, el contexto es esencial y puede ser natural o artificial, rural o urbano, un elemento geográfico
+                o un edificio vecino pre existente. En ambos casos creemos y queremos ser siempre una extensión armoniosa de
+                lo que en ese lugar ya se encuentra.
+              </p>
+          </div>
       </div>
   </div>
 
 </body>
-<footer>
+<footer id="contacto">
   <h1>Kancha Studio</h1>
   <div>
     <div>
@@ -113,8 +109,17 @@
 
     <div>
       <ul class="contact_list" style="display:inline-block">
-        <li>teléfono: +51.964.309.541</li>
-        <li>e-mail: hola@kancha.studio</li>
+        <li>
+          <a id="cel" href="tel:+51-964-309-541">tel: +51.964.309.541</a>
+          <!-- tel: +51.964.309.541 -->
+        </li>
+        <li>
+          <a id="email" href="hola@kancha.studio?Subject=Hola">e-mail: hola@kancha.studio</a>
+          <!-- e-mail: hola@kancha.studio -->
+        </li>
+        <li>
+          <a id="social" href="https://www.facebook.com/kancha.studio">social: Facebook</a>
+        </li>
       </ul>
     </div>
   </div>

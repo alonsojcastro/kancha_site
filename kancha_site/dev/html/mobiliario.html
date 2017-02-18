@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>kancha</title>
+  <title>Kancha</title>
   <link rel="stylesheet" type="text/css" href="../styles/main.css">
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -38,8 +38,8 @@
       <div class="dropdown">
         <a href="studio.html"><button class="dropbtn">STUDIO</button></a>
         <div class="dropdown-content">
-          <a href="studio.html#nosotros">NOSOTROS</a>
-          <a href="studio.html#contacto">CONTACTO</a>
+          <a href="studio.html">NOSOTROS</a>
+          <a onclick="scrollToContact()">CONTACTO</a>
         </div>
       </div>
       <div class="dropdown">
@@ -74,98 +74,68 @@
 
   </nav>
 
-  <main>
+  <main class="padtop">
 
-  <div id="mobiliario"></div>
+    <div class="grid_container">
 
-  <h1 id="mobi">Mobiliario</h1>
-  <div id="oficinas">
-    <h2 id="ofi">Oficinas</h2>
+    <h1>Mobiliario</h1>
+
     <div class="image_container" id="Oficinas">
-      <p class="image_caption"></p>
-      <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/1.jpg" alt="19">
+      <a href="proyectos.html#oficinas">
+        <p class="image_caption">Diagonal<br><span>_________</span><br><span class="caption_type">Oficinas</span></p>
+        <img class="grid_image" src="../img/Mobiliario/Oficinas/Diagonal/formatted/5.jpg" alt="Oficinas">
+      </a>
     </div>
-    <div id="description_text">
-      <p>
-        Un suizo y un español contrataron a una peruana y crearon una empresa; les fue bien y decidieron mudarse
-        al corazón de Miraflores: el Parque Kennedy. Ambos tienen gustos muy específicos y aparentemente opuestos,
-        así que los que hicimos fue trabajar con un punto medio entre lo minimalista y lo vintage combinando el
-        liso blanco de la pintura acrílica con la textura de la madera wash. El encargo consistió en implementar
-        los tres ambientes de la oficina sin alterar su arquitectura moderna de los años sesenta.
-      </p>
-      <p>
-        El área principal es mixta, ya que contiene a la recepción y al lugar de trabajo de cuatro colaboradores;
-        donde para tamizar esa privacidad diseñamos un mueble que funciona de divisor -ayudado por sus verticales
-        que van girando según el punto visual del usuario- al mismo tiempo que de librero, pudiendo utilizar las
-        mismas verticales como apoyo.
-      </p>
-      <p>
-        Para la oficina de gerencia se pensó en un gran tablero llano, solo interrumpido por dos nichos
-        donde colocar objetos personales para que no incomoden y conectarse a la corriente; al fondo, un aparador
-        que corrija la asimetría del espacio. Por último, el directorio es tan simple como un mesón blanco muy fino
-        apoyado suavemente sobre una estructura metálica, lineal y de color negro.
-      </p>
-    </div>
-  </div>
-
-  <div id="dormitorios">
-    <h2>Dormitorios</h2>
     <div class="image_container" id="Dormitorios">
-      <p class="image_caption"></p>
-      <img class="grid_image" src="../img/Mobiliario/Dormitorios/formatted/1.jpg" alt="33">
+      <a href="proyectos.html#dormitorios">
+        <p class="image_caption">El Cuarto de Claudito<br><span>_________</span><br><span class="caption_type">Dormitorios</span></p>
+        <img class="grid_image" src="../img/Mobiliario/Dormitorios/formatted/1.jpg" alt="Cuarto de Claudito">
+      </a>
     </div>
-    <div id="description_text">
-      <p>
-        El Cuarto de Claudito
-        Dormitorio para un niño al que le encanta el anaranjado y armar modelos de lego.
-      </p>
-      <p>El Cuarto de Mafer
-        Dormitorio para una adolescente que utiliza el mismo espacio para dormir, estudiar y descansar.
-      </p>
-      <p>
-        El Cuarto de Santiago &amp Vero
-        Dormitorio para una pareja de recién casados que buscaba tener todo en un solo mueble.
-      </p>
+    <div class="image_container" id="Dormitorios">
+      <a href="proyectos.html#dormitorios">
+        <p class="image_caption">El Cuarto de Mafer<br><span>_________</span><br><span class="caption_type">Dormitorios</span></p>
+        <img class="grid_image" src="../img/Mobiliario/Dormitorios/formatted/2.jpg" alt="El Cuarto de Mafer">
+      </a>
     </div>
-  </div>
-
-  <div id="bares">
-    <h2>Bares</h2>
+    <div class="image_container" id="Dormitorios">
+      <a href="proyectos.html#dormitorios">
+        <p class="image_caption">El cuarto de Santiago Vero<br><span>_________</span><br><span class="caption_type">Dormitorios</span></p>
+        <img class="grid_image" src="../img/Mobiliario/Dormitorios/formatted/3.jpg" alt="El Cuarto de Santiago Vero">
+      </a>
+    </div>
     <div class="image_container" id="Bares">
-      <p class="image_caption"></p>
-      <img class="grid_image" src="../img/Mobiliario/Bares/formatted/1.jpg" alt="36">
+      <a href="proyectos.html#dormitorios">
+        <p class="image_caption">Bar Canessa<br><span>_________</span><br><span class="caption_type">Bares</span></p>
+        <img class="grid_image" src="../img/Mobiliario/Bares/formatted/1.jpg" alt="Bar Canessa">
+      </a>
     </div>
-    <div id="description_text">
-      <p>
-        El bar Alzamora
-        Bar clásico que calza en un nicho.
-      </p>
-      <p>
-        El bar Willstatter
-        Bar minimalista que baila con un balcón republicano.
-      </p>
-      <p>
-        El bar Canessa
-        Bar contemporáneo que se apoya sobre una pared.
-      </p>
+    <div class="image_container" id="Bares">
+      <a href="proyectos.html#dormitorios">
+        <p class="image_caption">Bar Rubio<br><span>_________</span><br><span class="caption_type">Bares</span></p>
+        <img class="grid_image" src="../img/Mobiliario/Bares/formatted/2.jpg" alt="Bar Rubio">
+      </a>
     </div>
-  </div>
-
-  <div id="Salas_de_Estar">
-    <h2 id="salasdeestar">Salas De Estar</h2>
-    <div class="image_container" >
-      <p class="image_caption"></p>
-      <img class="grid_image" src="../img/Mobiliario/Salas_de_Estar/formatted/1.jpg" alt="39">
+    <div class="image_container" id="Bares">
+      <a href="proyectos.html#dormitorios">
+        <p class="image_caption">Bar Willstatter<br><span>_________</span><br><span class="caption_type">Bares</span></p>
+        <img class="grid_image" src="../img/Mobiliario/Bares/formatted/3.jpg" alt="Bar Willstatter">
+      </a>
     </div>
-  </div>
+    <div class="image_container" id="Salas_de_Estar">
+      <a href="proyectos.html#salasdeestar">
+        <p class="image_caption">Sala Alvarez<br><span>_________</span><br><span class="caption_type">Salas de Estar</span></p>
+        <img class="grid_image" src="../img/Mobiliario/Salas_de_Estar/formatted/1.jpg" alt="Sala Alvarez">
+      </a>
+    </div>
 
-</div>
+    </div>
 
-</main>
+  </main>
 
 </body>
 
-<footer>
+<footer id="contacto">
   <h1>Kancha Studio</h1>
   <div>
     <div>
@@ -179,8 +149,17 @@
     </div>
     <div>
       <ul class="contact_list" style="display:inline-block">
-        <li>teléfono: +51.964.309.541</li>
-        <li>e-mail: hola@kancha.studio</li>
+        <li>
+          <a id="cel" href="tel:+51-964-309-541">tel: +51.964.309.541</a>
+          <!-- tel: +51.964.309.541 -->
+        </li>
+        <li>
+          <a id="email" href="hola@kancha.studio?Subject=Hola">e-mail: hola@kancha.studio</a>
+          <!-- e-mail: hola@kancha.studio -->
+        </li>
+        <li>
+          <a id="social" href="https://www.facebook.com/kancha.studio">social: Facebook</a>
+        </li>
       </ul>
     </div>
   </div>

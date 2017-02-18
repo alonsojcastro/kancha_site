@@ -553,6 +553,12 @@ var scrollto = () => {
   });
 }
 
+var scrollToContact = () => {
+  $('html,body').animate({
+    scrollTop: $('#contacto').offset().top
+  });
+}
+
 var modal = (data) => {
   console.log(data);
   $('.viewer_title').text(data.title);

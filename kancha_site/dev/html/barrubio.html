@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../styles/swiper.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+    .gallery-top {
+        height: 80%;
+        width: 100%;
+    }
+    .gallery-thumbs {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+    }
+
+    </style>
+</head>
+<body>
+
+  <nav id="nav_wrapper">
+
+    <div>
+      <a id="logo" href="index.html"><img src='../img/Kancha_logo_white.png'></a>
+    </div>
+
+    <div id="menu">
+      <div class="dropdown">
+        <a href="studio.html"><button class="dropbtn">STUDIO</button></a>
+        <div class="dropdown-content">
+          <a href="studio.html#nosotros">NOSOTROS</a>
+          <a href="studio.html#contacto" onclick="scrollToContact()">CONTACTO</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="proyectos.html"><button class="dropbtn">PROYECTOS</button></a>
+        <div class="dropdown-content">
+          <a href="arquitectura.html">ARQUITECTURA</a>
+          <a href="mobiliario.html">MOBILIARIO</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">SOCIAL</button>
+        <div class="dropdown-content">
+          <a href="https://www.facebook.com/kancha.studio">FACEBOOK</a>
+          <!-- <a href="#">TWITTER</a>
+          <a href="#">INSTAGRAM</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile_menu">
+      <div class="dropdown">
+        <a id="mobile_menu_button"href="#"><button class="dropbtn"><img id="mobile_menu_img" src="../img/mobilemenu.png"/></button></a>
+        <div class="dropdown-content">
+          <a onclick="" href="studio.html#nosotros">NOSOTROS</a>
+          <a onclick="scrollToContact">CONTACTO</a>
+          <a href="aquitectura.html">ARQUITECTURA</a>
+          <a href="mobiliario.html">MOBILIARIO</a>
+          <a href="https://www.facebook.com/kancha.studio">FACEBOOK</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+
+    <!-- Swiper -->
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(../img/Mobiliario/Bares/Bar_Rubio.jpg)"></div>
+
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(../img/Mobiliario/Bares/Bar_Rubio.jpg)"></div>
+        </div>
+    </div>
+
+    <main>
+
+    <div id="description_text">
+      <p>
+        Arquitectos: Sebastián Arenas Alvarez-Calderón y Mirella Solari Sánchez.
+      </p>
+      <p>
+        Lugar: Cañete, Lima, Perú.
+      </p>
+      <p>
+        Área: 1 ha
+      </p>
+      <p>
+        Fecha de inicio: Marzo 2012
+      </p>
+      <p>
+        Fecha de entrega: Setiembre 2014
+      </p>
+      <p>
+        La Alborada ocupa un área de más de una hectárea y fue originalmente parte de una hacienda aún de mayor
+        extensión. Está ubicada en el distrito de Mala, al sur de la ciudad de Lima, en una zona de clima templado,
+        cercana al mar y ya con un uso de suelo predominante: las cuadras de caballos peruanos de paso.
+      </p>
+      <p>
+        El criollo criador nos encargó distribuir y diseñar un complejo que albergara su casa de campo, un jardín para
+        exhibir sus ejemplares, corrales, boxes para los sementales y maternidades, además de dos viviendas
+        permanentes -para las familias del chalán y el guardián- y un mediano espacio de cultivo. El terreno estaba
+        condicionado por una alameda de eucaliptos y un alto nivel de la napa freática. Basados en estas directrices,
+        decidimos colocar el ingreso al inicio de la alameda y la vivienda principal al final de la misma y
+        ligeramente elevada, como remate.
+      </p>
+      <p>
+        La vivienda del guardián estaría estratégicamente al lado del portón y
+        la del chalán en la esquina opuesta, triangulando de esta forma las tres edificaciones de mayor volumen.
+        Uno de los requerimientos especiales de nuestro cliente fue el de tener una casa moderna pero con un guiño
+        a la Mobiliario antigua; por lo que tomamos de referencia los ranchos barranquinos y diferenciamos tres
+        volúmenes para la composición de su vivienda, reutilizamos los vanos verticales con carpintería vintage
+        y reinterpretamos las molduras de adobe y quincha con la materialidad y proporción de las losas de concreto.
+      </p>
+    </p>
+  </div>
+</main>
+
+    <!-- Swiper JS -->
+    <script src="../scripts/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var galleryTop = new Swiper('.gallery-top', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 10,
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
+
+    </script>
+</body>
+<footer id="contacto">
+  <h1>Kancha Studio</h1>
+  <div>
+    <div>
+      <p>
+        Kancha es un estudio de Mobiliario latino y joven,
+        fundado en Lima por dos egresados de la Facultad de Mobiliario de la Universidad Peruana de Ciencias Aplicadas.
+        Actualmente, la oficina se dedica al diseño de encargos muy variados; desde muebles, como cunas, bares,
+        escritorios y tarimas, hasta cuadras de caballos de áreas mayores a una hectárea, pasando por viviendas de playa
+        y de ciudad, ya sea como remodelaciones o como proyectos nuevos.
+      </p>
+    </div>
+    <div>
+      <ul class="contact_list" style="display:inline-block">
+        <li>
+          <a id="cel" href="tel:+51-964-309-541">tel: +51.964.309.541</a>
+          <!-- tel: +51.964.309.541 -->
+        </li>
+        <li>
+          <a id="email" href="hola@kancha.studio?Subject=Hola">e-mail: hola@kancha.studio</a>
+          <!-- e-mail: hola@kancha.studio -->
+        </li>
+        <li>
+          <a id="social" href="https://www.facebook.com/kancha.studio">social: Facebook</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <p>Diseño y Desarrollo por <a href="https://gentrydemchak.com"> Gentry Demchak</a> y <a href="http://www.alonsocastrodesign.com">Alonso Castro</a></p>
+  </div>
+</footer>
+<Rubio

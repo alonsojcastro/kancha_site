@@ -279,7 +279,6 @@ body {
                   }
 
 
-
                   .image_caption:hover {
                     color: white;
                     text-shadow: 0 1px 2px black;
@@ -299,7 +298,6 @@ body {
                     }
 
                   }
-
 
                   .grid_image {
                     transition: all 0.5s linear;
@@ -636,12 +634,15 @@ body {
                           .image_caption {
                             color: white;
                             text-shadow: 0 1px 2px black;
-                            padding: 27% 0;
+                            /*padding: 27% 0;*/
+                            padding: 0;
+                            top: inherit;
+                            bottom: 0px;
                             background-color: rgba(167,197,126,0.75);
                           }
 
                           .grid_container {
-                            padding: 6em;
+                            /*padding: 6em;*/
                           }
 
                           .swiper-container.gallery-top.swiper-container-horizontal {
@@ -716,7 +717,8 @@ body {
 
                           .dropdown-content a {
                             font-size: 2em;
-                            padding: 0.80em;
+                            /*padding: 0.80em;*/
+                            padding: 4.2vh;
                             font-family: avenir;
                           }
 

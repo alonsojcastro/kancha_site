@@ -85,35 +85,31 @@
       </div>
     </div>
 
-    <div id="mobile_menu">
-      <div class="dropdown">
-        <a id="mobile_menu_button"href="#"><button class="dropbtn"><img id="mobile_menu_img" src="../img/mobilemenu.png"/></button></a>
-        <div class="dropdown-content">
-          <a onclick="" href="studio.html#nosotros">NOSOTROS</a>
-          <a href="studio.html#contacto">CONTACTO</a>
-          <a href="proyectos.html#arquitectura">ARQUITECTURA</a>
-          <a href="proyectos.html#mobiliario">MOBILIARIO</a>
-          <a href="https://www.facebook.com/kancha.studio">FACEBOOK</a>
-        </div>
-      </div>
+    <div id="image_viewer_container">
+       <div id="landscape">
+         <p id="viewer_description"></p>
+         <img id="landscape_image" src="">
+       </div>
+       <button id="next" onclick="next()">></button>
+       <button id="back" onclick="back()"><</button>
+       <button id="exit" onclick="exitViewer()">X</button>
     </div>
 
   </nav>
 
-
     <!-- Swiper -->
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/1_Antes.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/2_Despues.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/3_Antes.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/4_Despues.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/5.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/6.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/7.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/8.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/9.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/10.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/1_Antes.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/2_Despues.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/3_Antes.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/4_Despues.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/5.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/6.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/7.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/8.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/9.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/10.jpg)"></div>
         </div>
         <!-- Add Arrows -->
         <div class="swiper-button-next swiper-button-white"></div>
@@ -121,16 +117,16 @@
     </div>
     <div class="swiper-container gallery-thumbs">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/1_Antes.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/2_Despues.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/3_Antes.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/4_Despues.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/5.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/6.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/7.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/8.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/9.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/lacasafiel/10.jpg)"></div>        </div>
+          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/1_Antes.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/2_Despues.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/3_Antes.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/4_Despues.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/5.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/6.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/7.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/8.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/9.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../img/Arquitectura/LaCasaFiel/10.jpg)"></div>        </div>
     </div>
 
     <main>
@@ -177,7 +173,9 @@
 </main>
 
     <!-- Swiper JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../scripts/swiper.min.js"></script>
+    <script src="../scripts/imageview.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -185,6 +183,7 @@
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         spaceBetween: 10,
+        keyboardControl: true
     });
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,

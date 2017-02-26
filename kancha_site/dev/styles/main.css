@@ -642,7 +642,7 @@ body {
                           }
 
                           .grid_container {
-                            /*padding: 6em;*/
+                            padding: 7%;
                           }
 
                           .swiper-container.gallery-top.swiper-container-horizontal {
@@ -723,7 +723,7 @@ body {
                           }
 
                           .dropdown-content a:hover {
-                            background-color: rgb(159,196,137);
+                            /*background-color: rgb(159,196,137);*/
                           }
 
                           /*.dropdown:hover .dropdown-content {

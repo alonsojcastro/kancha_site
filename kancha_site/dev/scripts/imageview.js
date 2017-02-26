@@ -32,9 +32,17 @@ window.onload = () => {
 };
 
 var modal = (data) => {
-  $('#landscape_image').attr("src",data.url)
+  $('#viewer_image').attr("src",data.url)
   $('#landscape').css("display","inline")
-  // $('#portrait').css("display","none")
+  var img = document.getElementById('landscape');
+  width = img.clientWidth;
+  height = img.clientHeight;
+  console.log(width)
+  if(height > width){
+    $('#landscape').removeClass('landscape').addClass('portrait')
+  } else {
+    $('#landscape').removeClass('portrait').addClass('landscape')
+  }
 }
 
 var parseURL = (url) => {

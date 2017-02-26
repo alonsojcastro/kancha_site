@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <!-- Link Swiper's CSS -->
+    <title>Kancha</title>
     <link rel="stylesheet" href="../styles/swiper.min.css">
     <link rel="stylesheet" href="../styles/main.css">
 
@@ -85,17 +83,28 @@
       </div>
     </div>
 
-    <div id="image_viewer_container">
-       <div id="landscape">
-         <p id="viewer_description"></p>
-         <img id="landscape_image" src="">
-       </div>
-       <button id="next" onclick="next()">></button>
-       <button id="back" onclick="back()"><</button>
-       <button id="exit" onclick="exitViewer()">X</button>
-    </div>
 
   </nav>
+
+  <!-- <div id="image_viewer_container">
+     <div id="image_viewer_orientation">
+       <p id="viewer_description"></p>
+       <img id="viewer_image" src="">
+     </div>
+     <button id="next" onclick="next()">></button>
+     <button id="back" onclick="back()"><</button>
+     <button id="exit" onclick="exitViewer()">X</button>
+  </div> -->
+
+  <div id="image_viewer_container">
+      <div id="landscape">
+        <p id="viewer_description"></p>
+        <img id="viewer_image" src="">
+      </div>
+      <button id="next" onclick="next()">></button>
+      <button id="back" onclick="back()"><</button>
+      <button id="exit" onclick="exitViewer()">X</button>
+   </div>
 
     <!-- Swiper -->
     <div class="swiper-container gallery-top">

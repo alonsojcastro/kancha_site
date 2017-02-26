@@ -478,11 +478,11 @@ body {
 
                         }
 
-                        #viewer_image {
+                        /*#viewer_image {
                           position:absolute;
                           top: 55vh;
                           left: 50vw;
-                        }
+                        }*/
 
                         #next {
                           position: absolute;
@@ -530,27 +530,36 @@ body {
                           cursor:
                         }
 
-                        #landscape {
+                        #image_viewer_orientation {
+                          position: absolute;
+                          border: 5px solid white;
+                          left: 50vw;
+                          top: 51vh;
+                          margin-top: -22vw;
+                          background-color: white;
                           width: 64vw;
+                          margin-left: -32vw;
+                        }
+
+                        #landscape {
+                          /*width: 64vw;*/
                           border: 5px solid white;
                           position: absolute;
                           top: 51vh;
                           left: 50vw;
                           margin-top: -22vw;
-                          margin-left: -32vw;
+                          /*margin-left: -32vw;*/
                           background-color: white;
                         }
 
-                        #portrait {
-                          width: 28vw;
-                          border: 5px solid white;
-                          position: absolute;
-                          top: 52vh;
-                          left: 50vw;
-                          margin-top: -22vw;
-                          margin-left: -14vw;
-                          background-color: white;
+                        .landscape {
+                          width: 64vw;
+                          margin-left: -32vw;
+                        }
 
+                        .portrait {
+                          width: 28vw;
+                          margin-left: -14vw;
                         }
 
                         .viewer_title{
@@ -616,9 +625,9 @@ body {
                               background-color: #F6E03D;
                           }*/
 
-                          main{
-                          background-color: white;
-                          z-index: 10000;
+                          main {
+                            background-color: white;
+                            z-index: 10000;
                           }
 
                           h1 {

@@ -96,6 +96,16 @@
 
   </nav>
 
+  <div id="image_viewer_container">
+      <div id="landscape">
+        <p id="viewer_description"></p>
+        <img id="viewer_image" src="">
+      </div>
+      <button id="next" onclick="next()">></button>
+      <button id="back" onclick="back()"><</button>
+      <button id="exit" onclick="exitViewer()">X</button>
+   </div>
+
 
     <!-- Swiper -->
     <div class="swiper-container gallery-top">
@@ -157,7 +167,9 @@
 </main>
 
     <!-- Swiper JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../scripts/swiper.min.js"></script>
+    <script src="../scripts/imageview.js"></script>
 
     <!-- Initialize Swiper -->
     <script>

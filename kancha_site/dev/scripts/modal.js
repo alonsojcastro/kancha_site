@@ -1,82 +1,69 @@
 
 
-
-var current = 0;
-
-var modalImages = [
-
-];
-
-var mobileModalImages = [
-  "../img/modal/m1.jpg",
-  "../img/modal/m2.jpg",
-  "../img/modal/m3.jpg"
-]
-
-var desktopModalImages = [
-  "../img/modal/1.png",
-  "../img/modal/2.png",
-  "../img/modal/3.png",
-  "../img/modal/4.png"
-]
+var galleryTop = new Swiper('.gallery-top', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 10,
+        width: 400
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        width: 400
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
 
 $(document).ready( () => {
+    
     if ($(window).width() <= 1080) {
-      modalImages = mobileModalImages;
+      
+      resizeProjectCarousel('mobile')
     } else {
-      modalImages = desktopModalImages;
+      
+      resizeProjectCarousel('desktop')
     }
-    playModal();
+
 });
 
 
-var playModal = () => {
-  setTimeout(function () {
-    nextImage();
-    playModal();
-    resizeModalPlaceholder(getImageHeight())
-  }, 3000);
-}
+
 
 
 $(window).resize( () => {
   let windowWidth = $(window).width();
   console.log(windowWidth);
   if(windowWidth <= 1080){
-    modalImages = mobileModalImages;
+    
+    resizeProjectCarousel('mobile')
   } else {
-    modalImages = desktopModalImages;
+    
+    resizeProjectCarousel('desktop')
   }
 });
 
-var getImageHeight = () => {
-  var h = $('.modal_image').height()
-  console.log(h)
-  return h
-}
 
-var resizeModalPlaceholder = (h) => {
-  var height = `${h}px`;
-  console.log(height);
-  $('.modal_conatiner').css('height',height);
-}
 
-var nextImage = () => {
-  current ++
-  if(current >= modalImages.length){
-    current = 0;
-    $('.modal_image').attr('src',modalImages[current])
-  } else {
-    $('.modal_image').attr('src',modalImages[current])
+var resizeProjectCarousel = ( device ) => {
+  if(device == 'mobile'){
+    galleryTop.width = null
+    galleryTop.height = null
+    $('#p').appendTo('#carousel_mobile_anchor')
+    $('#p').removeClass('project_container_desktop').addClass('project_container_mobile');
+    console.log(galleryTop.width)
+
+  } else if (device == 'desktop') {
+    // carouselDesktopAnchor.appendChild(p)
+    $('#p').appendTo('#carousel_desktop_anchor')
+    $('#p').removeClass('project_container_mobile').addClass('project_container_desktop')
+    console.log(galleryTop.width)
+    galleryTop.width = 400
+    galleryTop.height = 400
+
   }
 }
 
-var previousImage = () => {
-  current --
-  if(current < 0){
-    current = modalImages.length - 1;
-    $('.modal_image').attr('src',modalImages[current])
-  } else {
-    $('.modal_image').attr('src',modalImages[current])
-  }
-}
+

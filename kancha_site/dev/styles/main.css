@@ -65,10 +65,11 @@ body {
   }
 
   #description_text{
-    display:inline-block;
+    /*display:inline-block;*/
     overflow:auto;
     margin-bottom: auto;
     font-size: 0.75em;
+    padding-left: 2em;
   }
 
   @media (max-width: 1080px) {
@@ -237,6 +238,17 @@ body {
 
                   main.padtop {
                     padding-top: 6em;
+                  }
+
+                  .project_container_desktop {
+                    width: 400px;
+                    height: 400px;
+                    float:left;
+                    display: inline-block;
+                  }
+
+                  .project_container_mobile {
+                    height: 80vh;
                   }
 
 

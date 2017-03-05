@@ -110,7 +110,13 @@
    </div>
 
 
+    <div id="carousel_mobile_anchor"></div>
+
+    <main>
+
     <!-- Swiper -->
+    <div id="carousel_desktop_anchor">
+    <div id="p" class="project_container_desktop">
     <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image:url(../img/Arquitectura/MuseoDelRimac/1.jpg)"></div>
@@ -134,8 +140,8 @@
           <div class="swiper-slide" style="background-image:url(../img/Arquitectura/MuseoDelRimac/6.jpg)"></div>
         </div>
     </div>
-
-    <main>
+    </div>
+    </div>
 
     <div id="description_text">
       <p>
@@ -182,25 +188,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../scripts/swiper.min.js"></script>
     <script src="../scripts/imageview.js"></script>
+    <script src="../scripts/modal.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-    var galleryTop = new Swiper('.gallery-top', {
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 10,
-    });
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-        spaceBetween: 10,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        touchRatio: 0.2,
-        slideToClickedSlide: true
-    });
-    galleryTop.params.control = galleryThumbs;
-    galleryThumbs.params.control = galleryTop;
-
-    </script>
 </body>
 <footer id="contacto">
   <h1>Kancha Studio</h1>

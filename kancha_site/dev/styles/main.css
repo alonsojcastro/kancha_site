@@ -21,7 +21,8 @@ body {
   }
 
   p {
-    font-size: 1.5em;
+    margin-top: 1.5vh;
+    font-size: 1.35em;
     font-family: "Avenir";
     font-weight: lighter;
     color: grey;
@@ -276,7 +277,7 @@ body {
                   }
 
                   .grid_container {
-                    padding-top: 6em;
+                    padding-top: 4em;
                   }
 
                   .image_container {
@@ -469,7 +470,7 @@ body {
 
                   footer {
                     background-color: #F6E03D;
-                    margin-top: 25vh;
+                    margin-top: 50vh;
                     padding: 0px 10vw;
                     height: 100vh;
                     overflow: auto;

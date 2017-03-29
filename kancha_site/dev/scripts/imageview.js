@@ -14,7 +14,14 @@ var scrollToContact = () => {
   });
 }
 
+function getwh() {
+  var img = document.getElementById('landscape')
+  width = img.clientWidth;
+  height = img.clientHeight;
+  // console.log(`${width}x${height}`)
+}
 
+//
 window.onload = () => {
 
   var gridImages = document.querySelectorAll('.swiper-container.gallery-top .swiper-slide');
@@ -26,23 +33,41 @@ window.onload = () => {
     gridImages[i].addEventListener('click', (event) => {
       // event.preventDefault();
       $(document).ready(()=>{$('#image_viewer_container').toggle();});
-      searchImage(parseURL(gridImages[i].style.backgroundImage),true);
+      searchImage(parseURL(gridImages[i].style.backgroundImage));
+
+      // var imgLoad = $("<img />");
+      // imgLoad.attr("src", parseURL(gridImages[i].style.backgroundImage));
+      // imgLoad.unbind("load");
+      // imgLoad.bind("load", function () {
+      // // Get image sizes
+      //
+      // });
+
     }, false);
   }
+
 };
 
+
+
 var modal = (data) => {
+  var width,height;
   $('#viewer_image').attr("src",data.url)
   $('#landscape').css("display","inline")
-  var img = document.getElementById('landscape');
-  width = img.clientWidth;
-  height = img.clientHeight;
-  console.log(width)
-  if(height > width){
-    $('#landscape').removeClass('landscape').addClass('portrait')
-  } else {
-    $('#landscape').removeClass('portrait').addClass('landscape')
-  }
+
+  var imgLoad = $("<img />");
+  imgLoad.attr("src", data.url);
+  imgLoad.unbind("load");
+  imgLoad.bind("load", function () {
+    width = this.width
+    height = this.height
+    console.log(`${width} x ${height}`)
+    if (height > width){
+      $('#landscape').removeClass('landscape').addClass('portrait')
+    } else {
+      $('#landscape').removeClass('portrait').addClass('landscape')
+    }
+  })
 }
 
 var parseURL = (url) => {
@@ -85,11 +110,13 @@ var back = () => {
   modal(imageData[current]);
 }
 
-var searchImage = (url) => {
+var searchImage = (url,w,h) => {
+
   for(var i = 0; i < imageData.length; i++){
     if (url == imageData[i].url){
       current = i;
-      modal(imageData[i]);
+      modal(imageData[i],w,h);
     }
   }
+
 }

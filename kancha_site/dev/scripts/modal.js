@@ -1,29 +1,56 @@
 
 
-var galleryTop = new Swiper('.gallery-top', {
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 10,
-        width: 400
-    });
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-        spaceBetween: 10,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        touchRatio: 0.2,
-        slideToClickedSlide: true,
-        width: 400
-    });
-    galleryTop.params.control = galleryThumbs;
-    galleryThumbs.params.control = galleryTop;
+// var galleryTop = new Swiper('.gallery-top', {
+//         nextButton: '.swiper-button-next',
+//         prevButton: '.swiper-button-prev',
+//         spaceBetween: 10,
+//         width: 400
+//     });
+//     var galleryThumbs = new Swiper('.gallery-thumbs', {
+//         spaceBetween: 10,
+//         centeredSlides: true,
+//         slidesPerView: 'auto',
+//         touchRatio: 0.2,
+//         slideToClickedSlide: true,
+//         width: 400
+//     });
+
+var galleryTop;
+
 
 $(document).ready( () => {
-    
+
     if ($(window).width() <= 1080) {
-      
-      resizeProjectCarousel('mobile')
+      galleryTop = new Swiper('.gallery-top', {
+              nextButton: '.swiper-button-next',
+              prevButton: '.swiper-button-prev',
+              spaceBetween: 10,
+          });
+          var galleryThumbs = new Swiper('.gallery-thumbs', {
+              spaceBetween: 10,
+              centeredSlides: true,
+              slidesPerView: 'auto',
+              touchRatio: 0.2,
+              slideToClickedSlide: true,
+          });
+          galleryTop.params.control = galleryThumbs;
+          galleryThumbs.params.control = galleryTop;
+      resizeProjectCarousel('mobile', $(window).width())
     } else {
-      
+      galleryTop = new Swiper('.gallery-top', {
+              nextButton: '.swiper-button-next',
+              prevButton: '.swiper-button-prev',
+              spaceBetween: 10,
+          });
+          var galleryThumbs = new Swiper('.gallery-thumbs', {
+              spaceBetween: 10,
+              centeredSlides: true,
+              slidesPerView: 'auto',
+              touchRatio: 0.2,
+              slideToClickedSlide: true,
+          });
+          galleryTop.params.control = galleryThumbs;
+          galleryThumbs.params.control = galleryTop;
       resizeProjectCarousel('desktop')
     }
 
@@ -37,20 +64,20 @@ $(window).resize( () => {
   let windowWidth = $(window).width();
   console.log(windowWidth);
   if(windowWidth <= 1080){
-    
-    resizeProjectCarousel('mobile')
+
+    resizeProjectCarousel('mobile', windowWidth)
   } else {
-    
+
     resizeProjectCarousel('desktop')
   }
 });
 
 
 
-var resizeProjectCarousel = ( device ) => {
+var resizeProjectCarousel = ( device , width ) => {
   if(device == 'mobile'){
-    galleryTop.width = null
-    galleryTop.height = null
+    // galleryTop.width = width
+    // galleryTop.height = null
     $('#p').appendTo('#carousel_mobile_anchor')
     $('#p').removeClass('project_container_desktop').addClass('project_container_mobile');
     console.log(galleryTop.width)
@@ -65,5 +92,3 @@ var resizeProjectCarousel = ( device ) => {
 
   }
 }
-
-

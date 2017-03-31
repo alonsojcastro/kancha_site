@@ -472,7 +472,7 @@ body {
 
                   footer {
                     background-color: #F6E03D;
-                    margin-top: 50vh;
+                    /*margin-top: 50vh;*/
                     padding: 0px 10vw;
                     height: 100vh;
                     overflow: auto;
@@ -516,7 +516,7 @@ body {
 
                         .image_container:hover:after {
                           content: "\A";
-                          background: rgba(255, 0, 0, 0.5);
+                          /*background: rgba(255, 0, 0, 0.5);*/
                         }
 
 
@@ -683,11 +683,12 @@ body {
                           main {
                             background-color: white;
                             z-index: 10000;
+                            padding: 0;
                           }
 
                           h1 {
                             font-size: 2em;
-                            margin: 0 0 2em 0;
+                            margin: 2em 0;
                           }
 
                           h2 {
@@ -699,14 +700,24 @@ body {
                             color: white;
                             text-shadow: 0 1px 2px #0E0D0C;
                             /*padding: 27% 0;*/
-                            padding: 0;
+                            font-size: 3em;
+                            padding: none;
                             top: inherit;
                             bottom: 0px;
-                            background-color: rgba(167,197,126,0.75);
+                            font-weight: bold;
+                            /*background-color: rgba(167,197,126,0.75);*/
                           }
 
                           .grid_container {
-                            padding: 7%;
+                            /*padding: 7%;*/
+                          }
+
+                          .grid_image {
+                            width: 100%;
+                          }
+
+                          .image_container{
+                            width: 100%;
                           }
 
                           .swiper-container.gallery-top.swiper-container-horizontal {

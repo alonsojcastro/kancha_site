@@ -24,14 +24,14 @@ body {
     margin-top: 1.5vh;
     padding: 1em;
     font-size: 1.50em;
-    font-family: "Avenir";
+    font-family: "Avenir", "Helvetica";
     font-weight: lighter;
     color: grey;
     text-align: justify;
   }
 
   h1,h2,h3 {
-    font-family: "Avenir";
+    font-family: "Avenir", 'Helvetica';
     font-weight: bold;
   }
 
@@ -45,6 +45,10 @@ body {
   h2 {
     padding-top: 14.5vh;
     font-size:3.5em;
+  }
+
+  a {
+    font-family: "Avenir", "Helvetica"
   }
 
   a:link {
@@ -69,18 +73,18 @@ body {
 
   #menu a {
     font-size:1em;
-    font-family:"Avenir";
+    font-family:"Avenir", "Helvetica";
   }
 
   #menu button {
     font-size: 1em;
-    font-family: "Avenir";
+    font-family: "Avenir", "Helvetica";
   }
 
   #description_text{
     /*display:inline-block;*/
     overflow:auto;
-    margin-top: 20vh;
+    margin-top: 13em;
     margin-bottom: auto;
     font-size: 0.75em;
     padding-left: 2em;
@@ -231,6 +235,7 @@ body {
                   }
 
                   #scroll_button {
+                    transition-duration: 0.2s;
                     position: absolute;
                     z-index: 997;
                     display: inline;
@@ -248,10 +253,11 @@ body {
 
                   main {
                     padding: 0em 6em 6em 6em;
+                    display: inline-block;
                   }
 
                   main.padtop {
-                    padding-top: 10em;
+                    padding-top: 7em;
                   }
 
                   .project_container_desktop {
@@ -259,6 +265,7 @@ body {
                     height: 400px;
                     float:left;
                     display: inline-block;
+                    margin-top: 10em;
                   }
 
                   .project_container_mobile {
@@ -290,6 +297,10 @@ body {
                     margin-bottom: 3em;
                     width: calc(33% - 4px);
                     overflow: none;
+                  }
+
+                  .image_container a{
+                    background-color:black;
                   }
 
                   .image_caption {
@@ -399,6 +410,11 @@ body {
                     height: 4em;
                   }
 
+                  #nosotros_text_container div{
+                    transition-duration: 1s;
+                    opacity: 0.0;
+                  }
+
                   #nosotros_text_container {
                     /*height: 70vh;*/
                     /*background:url('../img/Nosotros.jpg') no-repeat;*/
@@ -427,8 +443,6 @@ body {
 
                   }
 
-
-
                   .form_container {
                     position:relative;
                     margin: 50px;
@@ -445,7 +459,7 @@ body {
                   }
                   footer p {
                     margin-top: 1.5vh;
-                    padding-top: 3vh;
+                    padding: 0;
                     font-size: 1.5em;
                     font-weight: normal;
                     line-height: 1.5;
@@ -673,6 +687,10 @@ body {
                             padding: 0;
                           }
 
+                          main.padtop {
+                            padding-top: 10em;
+                          }
+
                           h1 {
                             font-size: 2em;
                             margin: 2em 0;
@@ -789,7 +807,7 @@ body {
                             font-size: 2em;
                             /*padding: 0.80em;*/
                             padding: 4.2vh;
-                            font-family: "Avenir";
+                            font-family: "Avenir", "Helvetica";
                           }
 
                           .dropdown-content a:hover {

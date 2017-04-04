@@ -20,3 +20,17 @@ $(document).ready( () => {
     $('.mobile_contact_text_container').css('display','none');
   }
 })
+
+
+$(document).ready( () => {
+ $('#nosotros_text_container').hover(
+    () => {
+      // $('#nosotros_text').toggle();
+      $('#nosotros_text_container div').css({'top':'25vh','opacity':1.0});
+    },
+    () => {
+      // $('#nosotros_text').toggle();
+      $('#nosotros_text_container div').css({'top':'20vh','opacity':0.0});
+    }
+  )
+})

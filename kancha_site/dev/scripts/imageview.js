@@ -1,6 +1,6 @@
 var current = 0;
 var imageData = [];
-
+var imageCaptionPadding = 0;
 
 var scrollto = () => {
   $('html,body').animate({
@@ -45,6 +45,10 @@ window.onload = () => {
 
     }, false);
   }
+
+  imageCaptionPadding = ($('.image_container').height() - $('.image_caption').height())/2;
+  console.log(imageCaptionPadding)
+  $('.image_caption').css({'padding-top':imageCaptionPadding,'padding-bottom':imageCaptionPadding})
 
 };
 
@@ -120,3 +124,26 @@ var searchImage = (url,w,h) => {
   }
 
 }
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) { //use `this`, not `document`
+        $('#scroll_button').css({
+            'opacity': 0.0
+        });
+    }
+    if($(this).scrollTop() < 200){
+      $('#scroll_button').css({
+        'opacity':1.0
+      })
+    }
+});
+
+
+$(window).resize( ()=>{
+  console.log($('.image_container').height())
+  console.log($('.image_caption').height())
+  imageCaptionPadding = ($('.image_container').height() - $('.image_caption').height())/2;
+  console.log(imageCaptionPadding)
+  $('.image_caption').css({'padding-top':imageCaptionPadding,'padding-bottom':imageCaptionPadding})
+})

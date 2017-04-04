@@ -22,13 +22,13 @@ var desktopModalImages = [
 
 
 $(document).ready( () => {
-    
+
     if ($(window).width() <= 1080) {
       modalImages = mobileModalImages;
-      
+
     } else {
       modalImages = desktopModalImages;
-      
+
     }
     playModal();
 });
@@ -45,25 +45,24 @@ var playModal = () => {
 
 $(window).resize( () => {
   let windowWidth = $(window).width();
-  console.log(windowWidth);
+
   if(windowWidth <= 1080){
     modalImages = mobileModalImages;
-    
+
   } else {
     modalImages = desktopModalImages;
-    
+
   }
 });
 
 var getImageHeight = () => {
   var h = $('.modal_image').height()
-  console.log(h)
+
   return h
 }
 
 var resizeModalPlaceholder = (h) => {
   var height = `${h}px`;
-  console.log(height);
   $('.modal_conatiner').css('height',height);
 }
 

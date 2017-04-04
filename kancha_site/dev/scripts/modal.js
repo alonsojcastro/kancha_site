@@ -57,12 +57,19 @@ $(document).ready( () => {
 });
 
 
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) { //use `this`, not `document`
+        $('#scroll_button').css({
+            'opacity': 0.0
+        });
+    }
+});
 
 
 
 $(window).resize( () => {
   let windowWidth = $(window).width();
-  console.log(windowWidth);
+
   if(windowWidth <= 1080){
 
     resizeProjectCarousel('mobile', windowWidth)
@@ -70,6 +77,7 @@ $(window).resize( () => {
 
     resizeProjectCarousel('desktop')
   }
+
 });
 
 
@@ -80,13 +88,13 @@ var resizeProjectCarousel = ( device , width ) => {
     // galleryTop.height = null
     $('#p').appendTo('#carousel_mobile_anchor')
     $('#p').removeClass('project_container_desktop').addClass('project_container_mobile');
-    console.log(galleryTop.width)
+
 
   } else if (device == 'desktop') {
     // carouselDesktopAnchor.appendChild(p)
     $('#p').appendTo('#carousel_desktop_anchor')
     $('#p').removeClass('project_container_mobile').addClass('project_container_desktop')
-    console.log(galleryTop.width)
+
     galleryTop.width = 400
     galleryTop.height = 400
 
